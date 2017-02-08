@@ -4,5 +4,7 @@
 
 <!-- <body background="images/bg_pares.jpg"> -->
 <body>
-  <div id='home_header_text'> #SnL </div>
+  <div id='home_header_text'>
+    #SJLenLoveTeam
+  </div>
 </body>
