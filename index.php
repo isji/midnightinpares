@@ -1,11 +1,8 @@
-<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
-<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<!-- <body background="images/bg_pares.jpg"> -->
 <body>
-        <h1>
-                "Len, I will love you as long as this website is running..."
-        </h1>
+  <div id='home_header_text'> #SnL </div>
 </body>
-<footer>
-        <p>** Note: Maintenance downtime scheduled every week.<p>
-</footer>
-</html>

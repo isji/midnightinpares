@@ -1,0 +1,13 @@
+body {
+    background-image: url('../images/bg_pares.jpg');
+    background-size: 100% 100%;
+    background-repeat: repeat-y repeat-x;
+    /*background-color: lightblue;*/
+}
+#home_header_text {
+    font-family: monospace;
+    font-size: 25px;
+    align: right;
+    color: white;
+    float: right;
+}
