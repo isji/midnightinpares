@@ -6,6 +6,6 @@
 <!-- <body background="images/bg_pares.jpg"> -->
 <body>
   <div id='home_header_text'>
-    #SJLenLoveTeam
+    #TambalangSJLen
   </div>
 </body>
