@@ -30,9 +30,8 @@ body {
 }
 
 audio {
-    display:none;
+    /*display:none;*/
 }
-
 
 input {
     outline: none;
@@ -47,7 +46,6 @@ input::-webkit-search-decoration,
 input::-webkit-search-cancel-button {
     display: none;
 }
-
 
 input[type=password] {
     background: #ededed url('../images/password-icon.png') no-repeat 10px center;
@@ -65,7 +63,7 @@ input[type=password] {
     transition: all .5s;
 }
 input[type=password]:focus {
-    width: 300px;
+    width: 350px;
     background-color: #fff;
     border-color: #66CC75;
 
@@ -73,7 +71,6 @@ input[type=password]:focus {
     -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
     box-shadow: 0 0 5px rgba(109,207,246,.5);
 }
-
 
 input:-moz-placeholder {
     color: #999;

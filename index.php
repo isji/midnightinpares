@@ -1,6 +1,6 @@
 <?php
 $password = 'wubwub';
-echo $homeLink = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
+$homeLink = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
 if (isset($_POST["homePassword"]) && !empty($_POST["homePassword"])) {
     if ($_POST["homePassword"] == $password) header('Location: ' . $homeLink.'/../vip-pass');
 }
