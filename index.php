@@ -9,11 +9,6 @@ if (isset($_POST["homePassword"]) && !empty($_POST["homePassword"])) {
 <head>
     <link rel="stylesheet" type="text/css" href="css/main_test.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-    <audio controls>
-        <source src="music/love-team.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
 </head>
 
 <body class="centered-wrapper">
