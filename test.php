@@ -11,7 +11,7 @@
         #SJLenLoveTeam
     </div>
 
-    <audio controls autoplay>
+    <audio acontrols>
         <source src="/midnightinpares/music/love-team.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
