@@ -104,14 +104,12 @@ if (!isset($_POST["homePassword"])) {
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="img/wreath2.png" height="90%" width="90%">
+            <img src="img/wreath3.png" height="90%" width="90%">
 
             <h1 id="homeHeading" class="sj">SJ</h1>
             <h1 id="homeHeading" class="len">Len </h1>
-            <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>
 
             <p></p>
-
         </div>
     </div>
     <div class="header-bottom">
@@ -281,6 +279,57 @@ if (!isset($_POST["homePassword"])) {
             </div>
         </div>
     </div>
+</section>
+
+<section class="bg-something" id="reminders">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">Mga ilang PAALALA</h2>
+                <hr class="primary">
+                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>
+            </div>
+            <div class="col-lg-2 col-lg-offset-2 text-center">
+                <i class="fa fa-info-circle fa-3x sr-contact"></i>
+                <p class="text-muted">Something! Something! Something!</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">Reminders</button>
+            </div>
+            <div class="col-lg-2 text-center">
+                <i class="fa fa-question-circle fa-3x sr-contact"></i>
+                <p class="text-muted">Something! Something! Something!</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">FAQs</button>
+            </div>
+            <div class="col-lg-2 text-center">
+                <i class="fa fa-black-tie fa-3x sr-contact"></i>
+                <p class="text-muted">Something! Something! Something!</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">Attire</button>
+            </div>
+            <div class="col-lg-2 text-center">
+                <i class="fa fa-gift fa-3x sr-contact"></i>
+                <p class="text-muted">Something! Something! Something!</p>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">Gift</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Reminder -->
+    <div class="modal fade" id="reminderModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is a large modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 <aside class="bg-dark">

@@ -60,6 +60,10 @@ p {
     color: white;
 }
 
+.bg-something {
+    background-color: lightgoldenrodyellow;
+}
+
 .text-faded {
     color: rgba(255, 255, 255, 0.7);
 }
@@ -180,6 +184,7 @@ aside {
     }
 }
 
+/*Mobile Header*/
 header {
     position: relative;
     width: 100%;
@@ -201,12 +206,36 @@ header .header-content {
     width: 100%;
 }
 
+header .header-content .header-content-inner h1.sj {
+    /*SJ*/
+    font-size: 50px;
+    font-family: Sanchez;
+    font-weight: bolder;
+    color: rgba(118, 29, 19, .9);
+    /*display: inline;*/
+}
+
+header .header-content .header-content-inner h1.len {
+    /*LEN*/
+    font-size: 50px;
+    font-family: Sanchez;
+    color: rgba(80, 150, 166, .9);
+    display: inline;
+}
+
+header .header-bottom h2.fam{
+    font-size: 30px;
+    font-family: Sanchez;
+    color: black;
+}
+
 header .header-content .header-content-inner h1 {
     font-weight: 700;
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 30px;
+    color: black;
 }
 
 header .header-content .header-content-inner hr {
@@ -227,16 +256,7 @@ header .header-content .header-content-inner p {
 
     header .header-content {
         position: absolute;
-        top: 30%;
-        -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        padding: 0 50px;
-    }
-
-    header .header-bottom{
-        position: absolute;
-        top: 80%;
+        top: 27%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
@@ -247,6 +267,14 @@ header .header-content .header-content-inner p {
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    header .header-content .header-content-inner img {
+        /*PANDA GIRAFFE*/
+        font-size: 100px;
+        font-family: Sanchez;
+        color: rgba(118, 29, 19, .9);
+        display: inline;
     }
 
     header .header-content .header-content-inner h1.sj {
@@ -270,7 +298,6 @@ header .header-content .header-content-inner p {
         font-size: 30px;
         font-family: Sanchez;
         color: black;
-
     }
 
     header .header-content .header-content-inner p {
@@ -278,6 +305,21 @@ header .header-content .header-content-inner p {
         max-width: 80%;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    header .header-bottom{
+        position: absolute;
+        top: 80%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        padding: 0 50px;
+    }
+
+    header .header-bottom h2.fam{
+        font-size: 30px;
+        font-family: Sanchez;
+        color: black;
     }
 }
 
