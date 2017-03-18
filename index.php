@@ -1,9 +1,6 @@
 <?php
-$password = 'pizza';
-$homeLink = 'http://'.$_SERVER['HTTP_HOST'].$_SERVER['PHP_SELF'];
-if (isset($_POST["homePassword"]) && !empty($_POST["homePassword"])) {
-    if ($_POST["homePassword"] == $password) header('Location: ' . $homeLink.'/../vip-pass');
-}
+$currentLink = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+$vipLink = $currentLink.'/../vip-pass/index.php';
 ?>
 
 <head>
@@ -17,7 +14,7 @@ if (isset($_POST["homePassword"]) && !empty($_POST["homePassword"])) {
         #SJLenLoveTeam
     </div>
 
-    <form action='' method="post">
+    <form action='<?php echo $vipLink ?>' method="post">
         <input type="password" placeholder="Enter Password..." name="homePassword">
         <input type="submit">
     </form>

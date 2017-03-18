@@ -1,3 +1,17 @@
+<?php
+$currentLink = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
+$homeLink = $currentLink . '/../../index.php';
+$password = 'siopao';
+
+if (!isset($_POST["homePassword"])) {
+    header('Location: ' . $homeLink);
+} else {
+    if ($_POST["homePassword"] != $password) {
+        header('Location: ' . $homeLink);
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,7 +79,6 @@
             <a class="navbar-brand page-scroll" href="#page-top">Ang Pag-iisang Dibdib</a>
         </div>
 
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
@@ -91,22 +104,20 @@
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="img/wreath2.png" alt="Smiley face" height="100%" width="100%">
-            <h1 id="homeHeading">SJ at Len </h1>
+            <img src="img/wreath2.png" height="90%" width="90%">
 
-            <h2 id="homeHeading">Ang Pag-iisang Dibdib</h2>
+            <h1 id="homeHeading" class="sj">SJ</h1>
+            <h1 id="homeHeading" class="len">Len </h1>
+            <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>
 
-            <br/>
-            <br/>
-            <hr>
             <p></p>
-            <a href="#about" class="btn btn-primary btn-xl page-scroll">#SJLenLoveTeam</a>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <img src="img/wreath.png"  height="100%" width="100%">
+
         </div>
+    </div>
+    <div class="header-bottom">
+        <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>
+        <a href="#about" class="btn btn-primary btn-xl page-scroll">Kwentong #SJLenLoveTeam</a> <br/>
+        <img src="img/wreath.png" height="80%" width="80%">
     </div>
 </header>
 
@@ -140,25 +151,23 @@
                 <div class="service-box">
                     <i class="fa fa-4x fa-calendar text-primary sr-icons"></i>
                     <!--<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>-->
-                    <h3>Date: May 26, 2017</h3>
-                    <p class="text-muted">The quick brown fox jumps over the lazy dog. The quick brown fox jumps over
-                        the lazy dog</p>
+                    <h3>Petsa: <b>May 26, 2017</b></h3>
+                    <p class="text-muted">Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-clock-o text-primary sr-icons"></i>
-                    <h3>Time: 4:00PM - 7:00PM</h3>
-                    <p class="text-muted">The quick brown fox jumps over the lazy dog. The quick brown fox jumps over
-                        the lazy dog</p>
+                    <h3>Oras: <b>4:00PM - 8:00PM</b></h3>
+                    <p class="text-muted">Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-map-marker text-primary sr-icons"></i>
-                    <h3>Venue: 14 Four Cafe</h3>
+                    <h3>Lugar: <b>14 Four Cafe</b></h3>
                     <p class="text-muted">144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
                         Rizal</p>
                 </div>
@@ -167,9 +176,10 @@
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-heart text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-hashtag text-primary sr-icons"></i>
-                    <h3>#SJLenLoveTeam</h3>
-                    <p class="text-muted">The quick brown fox jumps over the lazy dog. The quick brown fox jumps over
-                        the lazy dog</p>
+                    <h3>#<b>SJLenLoveTeam</b></h3>
+                    <p class="text-muted">Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa
+                        aming kasal
+                        sa mga SNS.</p>
                 </div>
             </div>
         </div>
@@ -293,12 +303,12 @@
             <div class="col-lg-4 col-lg-offset-2 text-center">
                 <i class="fa fa-phone fa-3x sr-contact"></i>
                 <p>(+63) 915-253-3212<br/>
-                (+63) 917-366-3908</p>
+                    (+63) 917-366-3908</p>
             </div>
             <div class="col-lg-4 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                 <p><a href="mailto:sj.balatan@gmail.com">sj.balatan@gmail.com</a><br/>
-                <a href="mailto:eileenlicopit@gmail.com ">eileenlicopit@gmail.com</a></p>
+                    <a href="mailto:eileenlicopit@gmail.com ">eileenlicopit@gmail.com</a></p>
             </div>
         </div>
     </div>
