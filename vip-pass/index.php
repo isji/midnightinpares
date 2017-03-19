@@ -92,6 +92,9 @@ if (!isset($_POST["homePassword"])) {
                     <a class="page-scroll" href="#portfolio">Something</a>
                 </li>
                 <li>
+                    <a class="page-scroll" href="#paalala">Paalala</a>
+                </li>
+                <li>
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
@@ -119,13 +122,13 @@ if (!isset($_POST["homePassword"])) {
     </div>
 </header>
 
-<section class="bg-primary" id="about">
+<section class="section-kwento" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Ang aming kwento!</h2>
-                <hr class="light">
-                <p class="text-faded">The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the
+<!--                <hr class="light">-->
+                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the
                     lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy
                     dog!</p>
                 <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Detalye ng Kasal</a>
@@ -134,7 +137,8 @@ if (!isset($_POST["homePassword"])) {
     </div>
 </section>
 
-<section id="services">
+
+<section id="services" class="section-impormasyon">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -150,7 +154,7 @@ if (!isset($_POST["homePassword"])) {
                     <i class="fa fa-4x fa-calendar text-primary sr-icons"></i>
                     <!--<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>-->
                     <h3>Petsa: <b>May 26, 2017</b></h3>
-                    <p class="text-muted">Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave.</p>
+                    <p class="text">Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -158,7 +162,7 @@ if (!isset($_POST["homePassword"])) {
                     <!--<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-clock-o text-primary sr-icons"></i>
                     <h3>Oras: <b>4:00PM - 8:00PM</b></h3>
-                    <p class="text-muted">Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!</p>
+                    <p class="text">Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -166,8 +170,9 @@ if (!isset($_POST["homePassword"])) {
                     <!--<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-map-marker text-primary sr-icons"></i>
                     <h3>Lugar: <b>14 Four Cafe</b></h3>
-                    <p class="text-muted">144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
+                    <p class="text">144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
                         Rizal</p>
+                    <a href="#" data-toggle="modal" data-target="#map">Load me</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -175,139 +180,55 @@ if (!isset($_POST["homePassword"])) {
                     <!--<i class="fa fa-4x fa-heart text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-hashtag text-primary sr-icons"></i>
                     <h3>#<b>SJLenLoveTeam</b></h3>
-                    <p class="text-muted">Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa
+<!--                    <p class="text-muted"></p>-->
+                    <p class="text">Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa
                         aming kasal
                         sa mga SNS.</p>
                 </div>
             </div>
         </div>
     </div>
-</section>
 
-<section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter popup-gallery">
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">
-                    <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
+    <div id="map" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/map.jpg" class="img-responsive">
+                </div>
             </div>
         </div>
     </div>
+
 </section>
 
-<section class="bg-something" id="reminders">
+<section class="section-paalala" id="paalala">
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Mga ilang PAALALA</h2>
-                <hr class="primary">
+<!--                <hr class="primary">-->
                 <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>
             </div>
             <div class="col-lg-2 col-lg-offset-2 text-center">
-                <i class="fa fa-info-circle fa-3x sr-contact"></i>
+                <i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i>
                 <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">Reminders</button>
+                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Reminders</button>
+<!--                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Detalye ng Kasal</a>-->
             </div>
             <div class="col-lg-2 text-center">
-                <i class="fa fa-question-circle fa-3x sr-contact"></i>
+                <i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i>
                 <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">FAQs</button>
+                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">FAQs</button>
             </div>
             <div class="col-lg-2 text-center">
-                <i class="fa fa-black-tie fa-3x sr-contact"></i>
+                <i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i>
                 <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">Attire</button>
+                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Kasuotan</button>
             </div>
             <div class="col-lg-2 text-center">
-                <i class="fa fa-gift fa-3x sr-contact"></i>
+                <i class="fa fa-gift icon-paalala fa-5x sr-contact"></i>
                 <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#reminderModal">Gift</button>
+                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Regalo</button>
             </div>
         </div>
     </div>
@@ -321,16 +242,154 @@ if (!isset($_POST["homePassword"])) {
                     <h4 class="modal-title">Modal Header</h4>
                 </div>
                 <div class="modal-body">
-                    <p>This is a large modal.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="panel-group" id="accordion">
+                        <div class="faqHeader">General questions</div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    Account registration at <strong>PrepBootstrap</strong> is only required if you will be selling or buying themes.
+                                    This ensures a valid communication channel for all parties involved in any transactions.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Can I submit my own Bootstrap templates or themes?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTen" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    A lot of the content of the site has been submitted by the community. Whether it is a commercial element/template/theme
+                                    or a free one, you are encouraged to contribute. All credits are published along with the resources.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">What is the currency used for all transactions?</a>
+                                </h4>
+                            </div>
+                            <div id="collapseEleven" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    All prices for themes, templates and other items, including each seller's or buyer's account balance are in <strong>USD</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </section>
+
+<!--<section class="no-padding" id="portfolio">-->
+<!--    <div class="container-fluid">-->
+<!--        <div class="row no-gutter popup-gallery">-->
+<!--            <div class="col-lg-4 col-sm-6">-->
+<!--                <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">-->
+<!--                    <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">-->
+<!--                    <div class="portfolio-box-caption">-->
+<!--                        <div class="portfolio-box-caption-content">-->
+<!--                            <div class="project-category text-faded">-->
+<!--                                Category-->
+<!--                            </div>-->
+<!--                            <div class="project-name">-->
+<!--                                Project Name-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-sm-6">-->
+<!--                <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">-->
+<!--                    <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">-->
+<!--                    <div class="portfolio-box-caption">-->
+<!--                        <div class="portfolio-box-caption-content">-->
+<!--                            <div class="project-category text-faded">-->
+<!--                                Category-->
+<!--                            </div>-->
+<!--                            <div class="project-name">-->
+<!--                                Project Name-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-sm-6">-->
+<!--                <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">-->
+<!--                    <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">-->
+<!--                    <div class="portfolio-box-caption">-->
+<!--                        <div class="portfolio-box-caption-content">-->
+<!--                            <div class="project-category text-faded">-->
+<!--                                Category-->
+<!--                            </div>-->
+<!--                            <div class="project-name">-->
+<!--                                Project Name-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-sm-6">-->
+<!--                <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">-->
+<!--                    <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">-->
+<!--                    <div class="portfolio-box-caption">-->
+<!--                        <div class="portfolio-box-caption-content">-->
+<!--                            <div class="project-category text-faded">-->
+<!--                                Category-->
+<!--                            </div>-->
+<!--                            <div class="project-name">-->
+<!--                                Project Name-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-sm-6">-->
+<!--                <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">-->
+<!--                    <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">-->
+<!--                    <div class="portfolio-box-caption">-->
+<!--                        <div class="portfolio-box-caption-content">-->
+<!--                            <div class="project-category text-faded">-->
+<!--                                Category-->
+<!--                            </div>-->
+<!--                            <div class="project-name">-->
+<!--                                Project Name-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--            <div class="col-lg-4 col-sm-6">-->
+<!--                <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">-->
+<!--                    <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">-->
+<!--                    <div class="portfolio-box-caption">-->
+<!--                        <div class="portfolio-box-caption-content">-->
+<!--                            <div class="project-category text-faded">-->
+<!--                                Category-->
+<!--                            </div>-->
+<!--                            <div class="project-name">-->
+<!--                                Project Name-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+
 
 <aside class="bg-dark">
     <div class="container text-center">
