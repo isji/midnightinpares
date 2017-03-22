@@ -107,16 +107,16 @@ if (!isset($_POST["homePassword"])) {
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <img src="img/wreath3.png" height="90%" width="90%">
+<!--            <img src="img/wreath3.png" height="90%" width="90%">-->
 
             <h1 id="homeHeading" class="sj">SJ</h1>
             <h1 id="homeHeading" class="len">Len </h1>
-
+            <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>
             <p></p>
         </div>
     </div>
     <div class="header-bottom">
-        <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>
+<!--        <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>-->
         <a href="#about" class="btn btn-primary btn-xl page-scroll">Kwentong #SJLenLoveTeam</a> <br/>
         <img src="img/wreath.png" height="80%" width="80%">
     </div>
@@ -151,7 +151,7 @@ if (!isset($_POST["homePassword"])) {
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-calendar text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-calendar icon-impormasyon sr-icons"></i>
                     <!--<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>-->
                     <h3>Petsa: <b>May 26, 2017</b></h3>
                     <p class="text">Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave.</p>
@@ -160,7 +160,7 @@ if (!isset($_POST["homePassword"])) {
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>-->
-                    <i class="fa fa-4x fa-clock-o text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-clock-o icon-impormasyon sr-icons"></i>
                     <h3>Oras: <b>4:00PM - 8:00PM</b></h3>
                     <p class="text">Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!</p>
                 </div>
@@ -168,7 +168,7 @@ if (!isset($_POST["homePassword"])) {
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>-->
-                    <i class="fa fa-4x fa-map-marker text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-map-marker icon-impormasyon sr-icons"></i>
                     <h3>Lugar: <b>14 Four Cafe</b></h3>
                     <p class="text">144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
                         Rizal</p>
@@ -178,7 +178,7 @@ if (!isset($_POST["homePassword"])) {
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-heart text-primary sr-icons"></i>-->
-                    <i class="fa fa-4x fa-hashtag text-primary sr-icons"></i>
+                    <i class="fa fa-4x fa-hashtag icon-impormasyon sr-icons"></i>
                     <h3>#<b>SJLenLoveTeam</b></h3>
 <!--                    <p class="text-muted"></p>-->
                     <p class="text">Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa
@@ -210,78 +210,260 @@ if (!isset($_POST["homePassword"])) {
                 <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>
             </div>
             <div class="col-lg-2 col-lg-offset-2 text-center">
-                <i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i>
-                <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Reminders</button>
-<!--                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Detalye ng Kasal</a>-->
+                <hr class="paalala">
+                <a data-toggle="modal" data-target="#kasuotanModal"><i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i></a>
+                <div class="paalala-category">KASUOTAN</div>
+                <div class="paalala-kasuotan-content">
+                <p class="text-muted">"Bohemian" o "Boho" ang nais sana naming tema ng kasuotan ng mga bisita.</p>
+<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#kasuotanModal">Kasuotan</button>-->
+                </div>
             </div>
             <div class="col-lg-2 text-center">
-                <i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i>
-                <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">FAQs</button>
+                <hr class="paalala">
+                <a data-toggle="modal" data-target="#regaloModal"><i class="fa fa-gift icon-paalala fa-5x sr-contact"></i></a>
+                <div class="paalala-category">REGALO </div>
+                <p class="text-muted">
+                    Ang pinakamagandang regalo ay ang iyong pagdalo. Char!
+                </p>
+<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#regaloModal">Regalo</button>-->
+
             </div>
             <div class="col-lg-2 text-center">
-                <i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i>
-                <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Kasuotan</button>
+                <hr class="paalala">
+                <a data-toggle="modal" data-target="#faqModal"><i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i></a>
+                <div class="paalala-category">FAQs</div>
+                <p class="text-muted">"Huwag mahihiyang magtanong, kung may..." </p>
+<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#faqModal">FAQs</button>-->
             </div>
             <div class="col-lg-2 text-center">
-                <i class="fa fa-gift icon-paalala fa-5x sr-contact"></i>
-                <p class="text-muted">Something! Something! Something!</p>
-                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Regalo</button>
+                <hr class="paalala">
+                <a data-toggle="modal" data-target="#reminderModal"><i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i></a>
+                <div class="paalala-category">REMINDERS</div>
+                <p class="text-muted">"_____"</p>
+<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Reminders</button>-->
             </div>
         </div>
     </div>
 
-    <!-- Modal Reminder -->
+    <!-- MODAL KASUOTAN -->
+    <div class="modal fade" id="kasuotanModal" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <i class="fa fa-black-tie icon-paalala fa-2x sr-contact"></i>
+                    KASUOTAN
+                </div>
+                <div class="modal-body">
+                    Ang Boho-style na pananamit ay binubuo ng dalawang mahalagang katangian - stylish at komportableng suotin. Sa madaling salita, halos huling linggo ng summer ang araw ng aming kasal kaya't kung maaari ay presko ang inyong damit sa araw na iyon. Ito ang ilang mga larawan ng mga Boho-style outfits na pwede niyong gayahin at gawing peg para sa inyong magiging damit. Maligayang pagmi-mix and match!
+                </div>
+                <div class="modal-wreath">
+                    <img src="img/wreath.png" height="25%" width="25%" align="center">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL REGALO -->
+    <div class="modal fade" id="regaloModal" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <i class="fa fa-gift icon-paalala fa-2x sr-contact"></i>
+                    REGALO
+                </div>
+                <div class="modal-body">
+                    Hindi required magbigay ng regalo. Kung gusto mo talaga kaming regaluhan, no judging naman kung ano ang nais mong ibigay. Tandaan na ang pinakamahalagang bagay para sa amin ay ang pagdalo mo sa aming munting pagdiriwang. Yeheees!
+                </div>
+                <div class="modal-wreath">
+                    <img src="img/wreath.png" height="25%" width="25%" align="center">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL REMINDERs -->
     <div class="modal fade" id="reminderModal" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <i class="fa fa-info-circle icon-paalala fa-2x sr-contact"></i>
+                    REMINDERS
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>
+                            Siguraduhing suot niyo ang inyong all-access pass sa araw ng aming kasal. Para feel na feels! Please!
+                        </li>
+                        <li>
+                            Ang password ng aming blog-style wedding invitation ay for your eyes only. Paki-blur na lang ang parte ng website at password kung nais niyong mag-post ng inyong VIP pass sa inyong SNS. Sikat!
+                        </li>
+                        <li>
+                            Upang maiwasang mapuno ang ating allotted parking lot, kung maari sana ay gawin niyong option ang mag-car pool imbes na hiwa-hiwalay ang paggamit ng sasakyan papunta sa venue. Kung kailangan niyo talaga magdala ng sariling sasakyan, siyempre OK lang naman din.
+                        </li>
+                    </ol>
+                </div>
+                <div class="modal-wreath">
+                    <img src="img/wreath.png" height="25%" width="25%" align="center">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL FAQs -->
+    <div class="modal fade" id="faqModal" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modal Header</h4>
+                    <i class="fa fa-info-circle icon-paalala fa-2x sr-contact"></i>
+                    FAQs
                 </div>
                 <div class="modal-body">
-                    <div class="panel-group" id="accordion">
-                        <div class="faqHeader">General questions</div>
+                    <div class="panel-group" id="faq">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Is account registration required?</a>
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#one">
+                                        May reception ba? Iisa lang kasi 'yung nakalagay na venue.
+                                    </a>
                                 </h4>
                             </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
+                            <div id="one" class="panel-collapse collapse">
+<!--                            <div id="one" class="panel-collapse collapse in">-->
                                 <div class="panel-body">
-                                    Account registration at <strong>PrepBootstrap</strong> is only required if you will be selling or buying themes.
-                                    This ensures a valid communication channel for all parties involved in any transactions.
+                                    Ang ceremony at salusalo ay parehong gaganapin sa iisang lugar. Hindi na natin kailangang lumipat ng venue para sa kainan pagkatapos ng ceremony. Chibugan na agad pagkatapos ng I do's!
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">Can I submit my own Bootstrap templates or themes?</a>
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#two">
+                                        Pwede bang mag-Uber papunta sa venue?
+                                    </a>
                                 </h4>
                             </div>
-                            <div id="collapseTen" class="panel-collapse collapse">
+                            <div id="two" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    A lot of the content of the site has been submitted by the community. Whether it is a commercial element/template/theme
-                                    or a free one, you are encouraged to contribute. All credits are published along with the resources.
+                                    Pwedeng-pwede! Na-try na namin ito gawin once kaya medyo sure naman kami na pwede rin kayo mag-Uber papunta sa venue. Hindi lang namin sure kung pwede ang GrabCar or GrabTaxi. Hehe. Sorry, biased. :)
                                 </div>
                             </div>
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h4 class="panel-title">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">What is the currency used for all transactions?</a>
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#three">
+                                        Mayroon bang parking lot sa venue?
+                                    </a>
                                 </h4>
                             </div>
-                            <div id="collapseEleven" class="panel-collapse collapse">
+                            <div id="three" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    All prices for themes, templates and other items, including each seller's or buyer's account balance are in <strong>USD</strong>
+                                    Mayroon! According sa isang staff ng venue, pwedeng mag-park ng maximum of 20 cars sa palibot ng lugar.
                                 </div>
                             </div>
                         </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#four">
+                                        Hanggang ano'ng oras ang reception?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="four" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Hanggang 8:00PM ang aming booking sa venue.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#five">
+                                        Pwede bang umuwi nang mas maaga?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="five" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Oo naman. No hard feelings naman, friend, kung kailangan mong umuwi nang maaga.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#six">
+                                        Pwede bang magdala ng plus 1?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="six" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    Sana maintidihan niyo na kung sino lang ang nakatanggap ng imbitasyon ay siya lamang ang maaring dumalo. Gusto man namin kayong magsama ng ibang kaibigan o kakilala, ikinalulungkot namin na baka hindi na tayo magkasya sa venue. Hugs!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL KASUOTAN -->
+                    <div class="modal fade" id="kasuotanModal" role="dialog">
+                        <div class="modal-dialog modal-m">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <i class="fa fa-black-tie icon-paalala fa-2x sr-contact"></i>
+                                    KASUOTAN
+                                </div>
+                                <div class="modal-body">
+                                    Ang Boho-style na pananamit ay binubuo ng dalawang mahalagang katangian - stylish at komportableng suotin. Sa madaling salita, halos huling linggo ng summer ang araw ng aming kasal kaya't kung maaari ay presko ang inyong damit sa araw na iyon. Ito ang ilang mga larawan ng mga Boho-style outfits na pwede niyong gayahin at gawing peg para sa inyong magiging damit. Maligayang pagmi-mix and match!
+                                </div>
+                                <div class="modal-wreath">
+                                    <img src="img/wreath.png" height="25%" width="25%" align="center">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL REGALO -->
+                    <div class="modal fade" id="regaloModal" role="dialog">
+                        <div class="modal-dialog modal-m">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <i class="fa fa-gift icon-paalala fa-2x sr-contact"></i>
+                                    REGALO
+                                </div>
+                                <div class="modal-body">
+                                    Hindi required magbigay ng regalo. Kung gusto mo talaga kaming regaluhan, no judging naman kung ano ang nais mong ibigay. Tandaan na ang pinakamahalagang bagay para sa amin ay ang pagdalo mo sa aming munting pagdiriwang. Yeheees!
+                                </div>
+                                <div class="modal-wreath">
+                                    <img src="img/wreath.png" height="25%" width="25%" align="center">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-wreath">
+                        <img src="img/wreath.png" height="25%" width="25%" align="center">
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -289,7 +471,7 @@ if (!isset($_POST["homePassword"])) {
                 </div>
             </div>
         </div>
-
+    </div>
 </section>
 
 <!--<section class="no-padding" id="portfolio">-->
@@ -408,12 +590,22 @@ if (!isset($_POST["homePassword"])) {
                 <hr class="primary">
                 <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>
             </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
+            <div class="col-lg-2 col-lg-offset-2 text-center">
                 <i class="fa fa-phone fa-3x sr-contact"></i>
-                <p>(+63) 915-253-3212<br/>
-                    (+63) 917-366-3908</p>
+                <p>0915-253-3212<br/>
+                    0917-366-3908</p>
             </div>
-            <div class="col-lg-4 text-center">
+            <div class="col-lg-2 text-center">
+                <i class="fa fa-facebook-square fa-3x sr-contact"></i>
+                <p><a href="https://www.facebook.com/sj.balatan">sj.balatan</a><br/>
+                    <a href="https://www.facebook.com/eileen.licopit ">eileen.licopit</a></p>
+            </div>
+            <div class="col-lg-2 text-center">
+                <i class="fa fa-instagram fa-3x sr-contact"></i>
+                <p><a href="https://www.instagram.com/__isji">__isji</a><br/>
+                    <a href="https://www.instagram.com/lenlicopss/ ">lenlicopss</a></p>
+            </div>
+            <div class="col-lg-2 text-center">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                 <p><a href="mailto:sj.balatan@gmail.com">sj.balatan@gmail.com</a><br/>
                     <a href="mailto:eileenlicopit@gmail.com ">eileenlicopit@gmail.com</a></p>

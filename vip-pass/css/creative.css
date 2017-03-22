@@ -66,6 +66,7 @@ p {
 
 .section-impormasyon {
     position: relative;
+    color: whitesmoke;
 }
 
 .section-impormasyon:after {
@@ -85,6 +86,10 @@ p {
     z-index: -1;
 }
 
+.icon-impormasyon {
+    color:ghostwhite;
+}
+
 .section-paalala {
     /*background-color: lightgoldenrodyellow;*/
     /*background-color: rgba(118, 29, 19, .9);*/
@@ -99,7 +104,7 @@ p {
     -o-background-size: cover;
     background-position: center;
     /*background-image: url('../img/bantayan.jpg');*/
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .section-paalala:after {
@@ -118,9 +123,37 @@ p {
     z-index: -1;
 }
 
+.paalala-category {
+    color: black;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.paalala-kasuotan-content {
+    font-size: 10px;
+}
+
+hr.paalala {
+    border-color: black;
+}
+
 .icon-paalala {
     color:#59A59F;
 }
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-body {
+    /*color: deeppink;*/
+}
+
+.modal-wreath {
+    text-align: center;
+}
+
+
 
 .text-faded {
     color: rgba(255, 255, 255, 0.7);
@@ -270,7 +303,7 @@ header .header-content .header-content-inner h1.sj {
     font-family: Sanchez;
     font-weight: bolder;
     color: rgba(118, 29, 19, .9);
-    /*display: inline;*/
+    display: inline;
 }
 
 header .header-content .header-content-inner h1.len {
@@ -281,8 +314,8 @@ header .header-content .header-content-inner h1.len {
     display: inline;
 }
 
-header .header-bottom h2.fam{
-    font-size: 30px;
+header .header-content-inner h2.fam{
+    font-size: 25px;
     font-family: Sanchez;
     color: black;
 }
