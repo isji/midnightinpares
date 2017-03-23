@@ -341,7 +341,7 @@ if (!isset($_POST["homePassword"])) {
         <div class="call-to-action">
             <h2>I-Download ang 'SOMETHING'</h2>
             <!--            <a href="file/MintWorks-RuleBook-Final.pdf" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>-->
-            <a href="img/axel-ig.JPG" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>
+            <a href="img/axel-ig.jpg" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>
         </div>
     </div>
 </aside>
