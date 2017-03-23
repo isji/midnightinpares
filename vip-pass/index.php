@@ -165,7 +165,7 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/2.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/timeline/2.JPG" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -228,7 +228,7 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/7.jpg" alt="">
+                            <img class="img-circle img-responsive" src="img/timeline/7.JPG" alt="">
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
