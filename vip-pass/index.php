@@ -89,7 +89,7 @@ if (!isset($_POST["homePassword"])) {
                     <a class="page-scroll" href="#services">Impormasyon</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#portfolio">Something</a>
+                    <a class="page-scroll" href="#something">Something</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#paalala">Paalala</a>
@@ -142,7 +142,8 @@ if (!isset($_POST["homePassword"])) {
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Ang Aming Kwento</h2>
-                <h3 class="section-subheading text-muted">Basa!</h3>
+                <h3 class="section-subheading text-muted">"Ang tanging pag-asa ko ay nasa tambalang ito."</h3>
+                <hr>
             </div>
         </div>
         <div class="row">
@@ -218,11 +219,11 @@ if (!isset($_POST["homePassword"])) {
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4>March 2014</h4>
-                                <h4 class="subheading">Love Team</h4>
+                                <h4 class="subheading">Love Team (It's Official)</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted"><b>SJ:</b>  Sabi ni Lord at ni parents, "Lez do diz!" Kaya nilatag ko kay Len ang intentions at mga plano ko para sa amin. Like a real man!</p>
-                                <p class="text-muted">Len: Sabi ni Lord, "OK!" Keri naman 'yung sinabi niya pero magpakilala muna siya sa parents ko!</p>
+                                <p class="text-muted">Len: Sabi ni Lord, "OK!" Keri naman 'yung sinabi ni SJ pero magpakilala muna siya sa parents ko!</p>
                             </div>
                         </div>
                     </li>
@@ -239,7 +240,7 @@ if (!isset($_POST["homePassword"])) {
                                 <p class="text-muted"><b>Axel:</b> Isang gabi sa Session Road...</p>
                                 <p class="text-muted"><b>SJ:</b> Luluhod pa ba ako? Hehe.</p>
                                 <p class="text-muted"><b>Len:</b> Hindi na. Yes na!</p>
-                                <p class="text-muted"><b>Axel</b> At sila ay na-engage nang gabing iyon. Arf!</p>
+                                <p class="text-muted"><b>Axel:</b> At sila ay na-engage nang gabing iyon. Arf!</p>
                             </div>
                         </div>
                     </li>
@@ -249,22 +250,22 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>2016</h4>
-                                <h4 class="subheading">Ready na para sa 2017!</h4>
+                                <h4>May 26, 2017</h4>
+                                <h4 class="subheading">Ang Pag-iisang Dibdib!</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted"><b>SJ:</b>  Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*</p>
-                                <p class="text-muted">Len: Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*</p>
+                                <p class="text-muted"><b>SJ and Len:</b> THIS IS IT!!!</p>
+                                <p class="text-muted"><b>Axel:</b> Arf!</p>
                             </div>
                         </div>
                     </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>READY NA
-                                <br>PARA SA
-                                <br>2017!</h4>
-                        </div>
-                    </li>
+<!--                    <li class="timeline-inverted">-->
+<!--                        <div class="timeline-image">-->
+<!--                            <h4>READY NA-->
+<!--                                <br>PARA SA-->
+<!--                                <br>2017!</h4>-->
+<!--                        </div>-->
+<!--                    </li>-->
                 </ul>
             </div>
         </div>
@@ -306,7 +307,7 @@ if (!isset($_POST["homePassword"])) {
                     <h3>Lugar: <b>14 Four Cafe</b></h3>
                     <p class="text">144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
                         Rizal</p>
-                    <a href="#" data-toggle="modal" data-target="#map">Load me</a>
+                    <a href="#" data-toggle="modal" data-target="#map">(I-click para sa mapa)</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -324,7 +325,7 @@ if (!isset($_POST["homePassword"])) {
     </div>
 
     <div id="map" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-body">
                     <img src="img/map.jpg" class="img-responsive">
@@ -335,16 +336,27 @@ if (!isset($_POST["homePassword"])) {
 
 </section>
 
+<aside class="bg-dark" id="something">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>I-Download ang 'SOMETHING'</h2>
+            <!--            <a href="file/MintWorks-RuleBook-Final.pdf" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>-->
+            <a href="img/axel-ig.JPG" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>
+        </div>
+    </div>
+</aside>
+
 <section class="section-paalala" id="paalala">
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Mga ilang PAALALA</h2>
 <!--                <hr class="primary">-->
-                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>
+                <p>I-click ang ICONs para sa karagdagang detalye</p>
+                <hr class="paalala">
             </div>
             <div class="col-lg-2 col-lg-offset-2 text-center">
-                <hr class="paalala">
+<!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#kasuotanModal"><i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">KASUOTAN</div>
                 <div class="paalala-kasuotan-content">
@@ -353,7 +365,7 @@ if (!isset($_POST["homePassword"])) {
                 </div>
             </div>
             <div class="col-lg-2 text-center">
-                <hr class="paalala">
+<!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#regaloModal"><i class="fa fa-gift icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">REGALO </div>
                 <p class="text-muted">
@@ -363,14 +375,14 @@ if (!isset($_POST["homePassword"])) {
 
             </div>
             <div class="col-lg-2 text-center">
-                <hr class="paalala">
+<!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#faqModal"><i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">FAQs</div>
                 <p class="text-muted">"Huwag mahihiyang magtanong, kung may..." </p>
 <!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#faqModal">FAQs</button>-->
             </div>
             <div class="col-lg-2 text-center">
-                <hr class="paalala">
+<!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#reminderModal"><i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">REMINDERS</div>
                 <p class="text-muted">"_____"</p>
@@ -608,6 +620,9 @@ if (!isset($_POST["homePassword"])) {
     </div>
 </section>
 
+
+
+
 <!--<section class="no-padding" id="portfolio">-->
 <!--    <div class="container-fluid">-->
 <!--        <div class="row no-gutter popup-gallery">-->
@@ -707,18 +722,9 @@ if (!isset($_POST["homePassword"])) {
 
 
 
-<aside class="bg-dark">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2>I-Download ang 'SOMETHING'</h2>
-            <a href="file/MintWorks-RuleBook-Final.pdf" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>
-        </div>
-    </div>
-</aside>
-
-<section id="contact">
+<aside class="bg-dark" id="contact">
     <div class="container">
-        <div class="row">
+
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-heading">Contact Details!</h2>
                 <hr class="primary">
@@ -744,9 +750,9 @@ if (!isset($_POST["homePassword"])) {
                 <p><a href="mailto:sj.balatan@gmail.com">sj.balatan@gmail.com</a><br/>
                     <a href="mailto:eileenlicopit@gmail.com ">eileenlicopit@gmail.com</a></p>
             </div>
-        </div>
+
     </div>
-</section>
+</aside>
 
 <!-- jQuery -->
 <script src="vendor/jquery/jquery.min.js"></script>

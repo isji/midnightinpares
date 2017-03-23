@@ -150,7 +150,7 @@ p {
 }
 
 hr.paalala {
-    border-color: black;
+    border-color: #1195a5;
 }
 
 .icon-paalala {
@@ -198,7 +198,8 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     /*color: #F05F40;*/
-    color: #f0bd80;
+    /*color: #f0bd80;*/
+    color: rgba(80, 150, 166, .9);
     font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 700;
     text-transform: uppercase;
@@ -206,7 +207,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: #eb3812;
+    color: rgba(118, 29, 19, .9);
 }
 
 .navbar-default .navbar-header .navbar-toggle {
@@ -247,12 +248,12 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(118, 29, 19, 0.7);
+        color: rgba(80, 150, 166, .9);
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
     .navbar-default .navbar-header .navbar-brand:focus {
-        color: white;
+        color: rgba(118, 29, 19, .9);
     }
 
     .navbar-default .nav > li > a,
