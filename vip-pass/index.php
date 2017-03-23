@@ -122,16 +122,150 @@ if (!isset($_POST["homePassword"])) {
     </div>
 </header>
 
+<!--<section class="section-kwento" id="about">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-8 col-lg-offset-2 text-center">-->
+<!--                <h2 class="section-heading">Ang aming kwento!</h2>-->
+<!--                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the-->
+<!--                    lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy-->
+<!--                    dog!</p>-->
+<!--                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Detalye ng Kasal</a>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+
+<!-- About Section -->
 <section class="section-kwento" id="about">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Ang aming kwento!</h2>
-<!--                <hr class="light">-->
-                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the
-                    lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy
-                    dog!</p>
-                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Detalye ng Kasal</a>
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Ang Aming Kwento</h2>
+                <h3 class="section-subheading text-muted">Basa!</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/timeline/1.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>October 2011</h4>
+                                <h4 class="subheading">Chances for everyone, everywhere.</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text"><b>Len:</b>  Nagkakilala kami sa isang maliit na opisina sa may Kalayaan Ave., QC. First job ko 'yun. First legit job naman ni SJ with TIN and all. Haha!</p>
+                                <p class="text"><b>SJ:</b>  Thank you, RareJob!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/timeline/2.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>February 2012</h4>
+                                <h4 class="subheading">UP Fair</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><b>SJ:</b> Nagpapapansin na si Len nang panahong 'to. Feeling ko talaga.</p>
+                                <p class="text-muted"><b>Len:</b> Nagpapapansin na talaga si SJ 'nung time na 'to. Ginalingan sa UP fair perya. In fairness...</p>
+                                <p class="text-muted"><b>Axel:</b> Arteee! Arf!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/timeline/4.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2013</h4>
+                                <h4 class="subheading">Chinatown Date</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">  Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*</p>
+                                <p class="text-muted">Len: Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/timeline/5.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>May 2013</h4>
+                                <h4 class="subheading">Issues</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">Len: Ano na kaya nangyari 'dun. Hindi na nagre-reply sa mga texts ko. Hmp. </p>
+                                <p class="text-muted"><b>SJ:</b>  Teka, ready na ba ako sa commitment? Ready na ba ako financially, emotionally, at spiritually? </p>
+                                <p class="text-muted">Len: Hmmmm. Kailangan kong i-guard ang heart ko. Ang labo na eh. Hindi kami pero parang kami. </p>
+                                <p class="text-muted">Axel: At nag-pray sila separately... Arf! </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/timeline/6.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>March 2014</h4>
+                                <h4 class="subheading">Love Team</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><b>SJ:</b>  Sabi ni Lord at ni parents, "Lez do diz!" Kaya nilatag ko kay Len ang intentions at mga plano ko para sa amin. Like a real man!</p>
+                                <p class="text-muted">Len: Sabi ni Lord, "OK!" Keri naman 'yung sinabi niya pero magpakilala muna siya sa parents ko!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/timeline/7.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>December 2015</h4>
+                                <h4 class="subheading">Oh my Gulay!</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><b>Axel:</b> Isang gabi sa Session Road...</p>
+                                <p class="text-muted"><b>SJ:</b> Luluhod pa ba ako? Hehe.</p>
+                                <p class="text-muted"><b>Len:</b> Hindi na. Yes na!</p>
+                                <p class="text-muted"><b>Axel</b> At sila ay na-engage nang gabing iyon. Arf!</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image">
+                            <img class="img-circle img-responsive" src="img/timeline/8.jpg" alt="">
+                        </div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>2016</h4>
+                                <h4 class="subheading">Ready na para sa 2017!</h4>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted"><b>SJ:</b>  Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*</p>
+                                <p class="text-muted">Len: Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>READY NA
+                                <br>PARA SA
+                                <br>2017!</h4>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
