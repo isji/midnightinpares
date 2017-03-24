@@ -89,13 +89,13 @@ if (!isset($_POST["homePassword"])) {
                     <a class="page-scroll" href="#services">Impormasyon</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#something">Something</a>
+                    <a class="page-scroll" href="#surprise">Sorpresa</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#paalala">Paalala</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
+                    <a class="page-scroll" href="#contact">Contact Us</a>
                 </li>
             </ul>
         </div>
@@ -111,7 +111,8 @@ if (!isset($_POST["homePassword"])) {
 
             <h1 id="homeHeading" class="sj">SJ</h1>
             <h1 id="homeHeading" class="len">Len </h1>
-            <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>
+<!--            <h2 id="homeHeading" class="fam">Family and friends, this is it.</h2>-->
+            <h2 id="homeHeading" class="fam">"Sa mundong pabago-bago, pag-ibig ko ay totoo."</h2>
             <p></p>
         </div>
     </div>
@@ -141,9 +142,9 @@ if (!isset($_POST["homePassword"])) {
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Ang Aming Kwento</h2>
-                <h3 class="section-subheading text-muted">"Ang tanging pag-asa ko ay nasa tambalang ito."</h3>
-                <hr>
+                <h2 class="section-header header-kwento">Ang Aming Kwento</h2>
+                <h3 class="section-subheader subheader-kwento text">"Ang tanging pag-asa ko ay nasa tambalang ito."</h3>
+                <hr class="header-kwento">
             </div>
         </div>
         <div class="row">
@@ -151,12 +152,14 @@ if (!isset($_POST["homePassword"])) {
                 <ul class="timeline">
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/1.jpg" alt="">
+                            <a href="#" data-toggle="modal" data-target="#kwento1">
+                                <img class="img-circle img-responsive" src="img/timeline/1.jpg" alt="">
+                            </a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>October 2011</h4>
-                                <h4 class="subheading">Chances for everyone, everywhere.</h4>
+                                <h4 class="timeline-header">October 2011</h4>
+                                <h4 class="timeline-subheader">Chances for everyone, everywhere.</h4>
                             </div>
                             <div class="timeline-body">
                                 <p class="text"><b>Len:</b>  Nagkakilala kami sa isang maliit na opisina sa may Kalayaan Ave., QC. First job ko 'yun. First legit job naman ni SJ with TIN and all. Haha!</p>
@@ -166,17 +169,19 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/2.JPG" alt="">
+                            <a href="#" data-toggle="modal" data-target="#kwento2">
+                                <img class="img-circle img-responsive" src="img/timeline/2.JPG" alt="">
+                            </a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>February 2012</h4>
-                                <h4 class="subheading">UP Fair</h4>
+                                <h4 class="timeline-header">February 2012</h4>
+                                <h4 class="timeline-subheader">UP Fair</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted"><b>SJ:</b> Nagpapapansin na si Len nang panahong 'to. Feeling ko talaga.</p>
-                                <p class="text-muted"><b>Len:</b> Nagpapapansin na talaga si SJ 'nung time na 'to. Ginalingan sa UP fair perya. In fairness...</p>
-                                <p class="text-muted"><b>Axel:</b> Arteee! Arf!</p>
+                                <p class="text"><b>SJ:</b> Nagpapapansin na si Len nang panahong 'to. Feeling ko talaga.</p>
+                                <p class="text"><b>Len:</b> Nagpapapansin na talaga si SJ 'nung time na 'to. Ginalingan sa UP fair perya. In fairness...</p>
+                                <p class="text"><b>Axel:</b> Arteee! Arf!</p>
                             </div>
                         </div>
                     </li>
@@ -186,12 +191,12 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2013</h4>
-                                <h4 class="subheading">Chinatown Date</h4>
+                                <h4 class="timeline-header">March 2013</h4>
+                                <h4 class="timeline-subheader">Chinatown Date</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">  Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*</p>
-                                <p class="text-muted">Len: Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*</p>
+                                <p class="text"><b>SJ:</b>  Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*</p>
+                                <p class="text"><b>Len:</b> Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*</p>
                             </div>
                         </div>
                     </li>
@@ -201,14 +206,14 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>May 2013</h4>
-                                <h4 class="subheading">Issues</h4>
+                                <h4 class="timeline-header">May 2013</h4>
+                                <h4 class="timeline-subheader">Issues</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Len: Ano na kaya nangyari 'dun. Hindi na nagre-reply sa mga texts ko. Hmp. </p>
-                                <p class="text-muted"><b>SJ:</b>  Teka, ready na ba ako sa commitment? Ready na ba ako financially, emotionally, at spiritually? </p>
-                                <p class="text-muted">Len: Hmmmm. Kailangan kong i-guard ang heart ko. Ang labo na eh. Hindi kami pero parang kami. </p>
-                                <p class="text-muted">Axel: At nag-pray sila separately... Arf! </p>
+                                <p class="text"><b>Len:</b> Ano na kaya nangyari 'dun. Hindi na nagre-reply sa mga texts ko. Hmp. </p>
+                                <p class="text"><b>SJ:</b>  Teka, ready na ba ako sa commitment? Ready na ba ako financially, emotionally, at spiritually? </p>
+                                <p class="text"><b>Len:</b> Hmmmm. Kailangan kong i-guard ang heart ko. Ang labo na eh. Hindi kami pero parang kami. </p>
+                                <p class="text"><b>Axel:</b> At nag-pray sila separately... Arf! </p>
                             </div>
                         </div>
                     </li>
@@ -218,12 +223,12 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>March 2014</h4>
-                                <h4 class="subheading">Love Team (It's Official)</h4>
+                                <h4 class="timeline-header">March 2014</h4>
+                                <h4 class="timeline-subheader">Love Team (It's official.)</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted"><b>SJ:</b>  Sabi ni Lord at ni parents, "Lez do diz!" Kaya nilatag ko kay Len ang intentions at mga plano ko para sa amin. Like a real man!</p>
-                                <p class="text-muted">Len: Sabi ni Lord, "OK!" Keri naman 'yung sinabi ni SJ pero magpakilala muna siya sa parents ko!</p>
+                                <p class="text"><b>SJ:</b>  Sabi ni Lord at ni parents, "Lez do diz!" Kaya nilatag ko kay Len ang intentions at mga plano ko para sa amin. Like a real man!</p>
+                                <p class="text"><b>Len:</b> Sabi ni Lord, "OK!" Keri naman 'yung sinabi ni SJ pero magpakilala muna siya sa parents ko!</p>
                             </div>
                         </div>
                     </li>
@@ -233,14 +238,14 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Oh my Gulay!</h4>
+                                <h4 class="timeline-header">December 2015</h4>
+                                <h4 class="timeline-subheader">Oh my Gulay!</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted"><b>Axel:</b> Isang gabi sa Session Road...</p>
-                                <p class="text-muted"><b>SJ:</b> Luluhod pa ba ako? Hehe.</p>
-                                <p class="text-muted"><b>Len:</b> Hindi na. Yes na!</p>
-                                <p class="text-muted"><b>Axel:</b> At sila ay na-engage nang gabing iyon. Arf!</p>
+                                <p class="text"><b>Axel:</b> Isang gabi sa Session Road...</p>
+                                <p class="text"><b>SJ:</b> Luluhod pa ba ako? Hehe.</p>
+                                <p class="text"><b>Len:</b> Hindi na. Yes na!</p>
+                                <p class="text"><b>Axel:</b> At sila ay na-engage nang gabing iyon. Arf!</p>
                             </div>
                         </div>
                     </li>
@@ -250,12 +255,12 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4>May 26, 2017</h4>
-                                <h4 class="subheading">Ang Pag-iisang Dibdib!</h4>
+                                <h4 class="timeline-header">May 26, 2017</h4>
+                                <h4 class="timeline-subheader">Ang Pag-iisang Dibdib!</h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted"><b>SJ and Len:</b> THIS IS IT!!!</p>
-                                <p class="text-muted"><b>Axel:</b> Arf!</p>
+                                <p class="text"><b>SJ and Len:</b> THIS IS IT!!!</p>
+                                <p class="text"><b>Axel:</b> Arf!</p>
                             </div>
                         </div>
                     </li>
@@ -270,6 +275,33 @@ if (!isset($_POST["homePassword"])) {
             </div>
         </div>
     </div>
+
+    <div id="kwento1" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/1.jpg" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kwento2" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/2.JPG" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </section>
 
 
@@ -277,7 +309,8 @@ if (!isset($_POST["homePassword"])) {
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Mahalagang Impormasyon</h2>
+                <h2 class="section-header header-impormasyon">Mahalagang Impormasyon</h2>
+                <h3 class="section-subheader subheader-impormasyon text">"Sagutin mo lang ako aking sinta'y walang humpay na ligaya."</h3>
                 <hr class="primary">
             </div>
         </div>
@@ -336,12 +369,14 @@ if (!isset($_POST["homePassword"])) {
 
 </section>
 
-<aside class="bg-dark" id="something">
+<aside class="bg-dark" id="surprise">
     <div class="container text-center">
         <div class="call-to-action">
-            <h2>I-Download ang 'SOMETHING'</h2>
+            <h2 class="section-header header-suprise">Break ka muna</h2>
+            <h3 class="section-subheader subheader-surprise text">"Ang sarap maligaw sa ating kwentuhan."</h3>
             <!--            <a href="file/MintWorks-RuleBook-Final.pdf" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>-->
-            <a href="img/axel-ig.jpg" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>
+            <br/>
+            <a href="img/axel-ig.jpg" class="btn btn-default btn-xl sr-button" target="_blank">Surprise me</a>
         </div>
     </div>
 </aside>
@@ -350,17 +385,17 @@ if (!isset($_POST["homePassword"])) {
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Mga ilang PAALALA</h2>
+                <h2 class="section-header">Mga PAALALA</h2>
 <!--                <hr class="primary">-->
-                <p>I-click ang ICONs para sa karagdagang detalye</p>
+                <p>I-click ang <b><i>ICONS</i></b> para sa karagdagang detalye</p>
                 <hr class="paalala">
             </div>
             <div class="col-lg-2 col-lg-offset-2 text-center">
 <!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#kasuotanModal"><i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">KASUOTAN</div>
-                <div class="paalala-kasuotan-content">
-                <p class="text-muted">"Bohemian" o "Boho" ang nais sana naming tema ng kasuotan ng mga bisita.</p>
+                <div class="paalala-content">
+                <p class="text">"Bohemian" o "Boho" ang tema ng aming kasal.</p>
 <!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#kasuotanModal">Kasuotan</button>-->
                 </div>
             </div>
@@ -368,25 +403,30 @@ if (!isset($_POST["homePassword"])) {
 <!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#regaloModal"><i class="fa fa-gift icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">REGALO </div>
-                <p class="text-muted">
+                <div class="paalala-content">
+                <p class="text">
                     Ang pinakamagandang regalo ay ang iyong pagdalo. Char!
                 </p>
 <!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#regaloModal">Regalo</button>-->
-
+                </div>
             </div>
             <div class="col-lg-2 text-center">
 <!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#faqModal"><i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">FAQs</div>
-                <p class="text-muted">"Huwag mahihiyang magtanong, kung may..." </p>
+                <div class="paalala-content">
+                <p class="text">"Huwag mahihiyang magtanong, kung may..." </p>
 <!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#faqModal">FAQs</button>-->
-            </div>
+                </div>
+                </div>
             <div class="col-lg-2 text-center">
 <!--                <hr class="paalala">-->
                 <a data-toggle="modal" data-target="#reminderModal"><i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i></a>
                 <div class="paalala-category">REMINDERS</div>
-                <p class="text-muted">"_____"</p>
+                <div class="paalala-content">
+                <p class="text">Bawal ang makakalimutin.</p>
 <!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Reminders</button>-->
+                </div>
             </div>
         </div>
     </div>
@@ -423,7 +463,7 @@ if (!isset($_POST["homePassword"])) {
                     REGALO
                 </div>
                 <div class="modal-body">
-                    Hindi required magbigay ng regalo. Kung gusto mo talaga kaming regaluhan, no judging naman kung ano ang nais mong ibigay. Tandaan na ang pinakamahalagang bagay para sa amin ay ang pagdalo mo sa aming munting pagdiriwang. Yeheees!
+                    Hindi required magbigay ng regalo. Kung gusto mo talaga kaming regaluhan, no judging naman kung ano ang nais mong ibigay. Cash man o gamit ay maa-appreciate namin. Tandaan na ang pinakamahalagang bagay para sa amin ay ang pagdalo mo sa aming munting pagdiriwang. Yeheees!
                 </div>
                 <div class="modal-wreath">
                     <img src="img/wreath.png" height="25%" width="25%" align="center">
@@ -447,13 +487,16 @@ if (!isset($_POST["homePassword"])) {
                 <div class="modal-body">
                     <ol>
                         <li>
-                            Siguraduhing suot niyo ang inyong all-access pass sa araw ng aming kasal. Para feel na feels! Please!
+                            Siguraduhing suot niyo ang inyong all-access pass sa araw ng aming kasal. Para feel na feels! Please! <br/>
                         </li>
                         <li>
                             Ang password ng aming blog-style wedding invitation ay for your eyes only. Paki-blur na lang ang parte ng website at password kung nais niyong mag-post ng inyong VIP pass sa inyong SNS. Sikat!
                         </li>
                         <li>
                             Upang maiwasang mapuno ang ating allotted parking lot, kung maari sana ay gawin niyong option ang mag-car pool imbes na hiwa-hiwalay ang paggamit ng sasakyan papunta sa venue. Kung kailangan niyo talaga magdala ng sariling sasakyan, siyempre OK lang naman din.
+                        </li>
+                        <li>
+                            Prayers for sunshine!
                         </li>
                     </ol>
                 </div>
@@ -726,9 +769,9 @@ if (!isset($_POST["homePassword"])) {
     <div class="container">
 
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Contact Details!</h2>
+                <h3 class="section-header-tawag">Tawag. PM. Email.</h3>
                 <hr class="primary">
-                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>
+<!--                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>-->
             </div>
             <div class="col-lg-2 col-lg-offset-2 text-center">
                 <i class="fa fa-phone fa-3x sr-contact"></i>

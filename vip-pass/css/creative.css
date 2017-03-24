@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+
 /*!
  * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
  * Copyright 2013-2016 Start Bootstrap
@@ -11,16 +13,6 @@ body {
 
 body {
     font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-}
-
-hr {
-    border-color: white;
-    border-width: 3px;
-    max-width: 60%;
-}
-
-hr.light {
-    border-color: white;
 }
 
 a {
@@ -55,18 +47,78 @@ p {
     color: white;
 }
 
+hr {
+    /*border-color: red;*/
+    border-width: 3px;
+    max-width: 60%;
+}
+
+hr.header-kwento {
+    border-color: rgba(118, 29, 19, .9);
+}
+
+hr.paalala {
+    border-color: #1195a5;
+}
+
+.section-header {
+    font-family: "nexa-rust-sans";
+    font-size: 40px;
+}
+
+.section-header-tawag {
+    font-family: "nexa-rust-sans";
+    font-size: 30px;
+}
+
+.header-kwento {
+    /*color: black;*/
+    color: rgba(118, 29, 19, .9);
+}
+
+.header-impormasyon {
+    /*color: gray;*/
+}
+
+.header-suprise {
+    color: lightsalmon;
+}
+
+
+.section-subheader {
+    font-family: 'Marck Script', cursive;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subheader-kwento {
+    /*color: black;*/
+    color: rgba(118, 29, 19, .9);
+}
+
+.subheader-impormasyon {
+    /*color: black;*/
+    color: white;
+}
+
+.subheader-surprise {
+    color: lightsalmon;
+}
+
 .section-kwento {
     /*background-color: #F05F40;*/
     /*background-color: rosybrown;*/
     /*background-color: #FFC09E;*/
     /*background-color: #92BE96;*/
     /*opacity : 0.6;*/
+    font-family: "Comic Sans MS";
     position: relative;
     color: rgba(118, 29, 19, .9);
 }
 
 .section-kwento:after {
     background-color: #92BE96;
+    font-family: "Comic Sans MS";
     /*opacity : 0.6;*/
     content : "";
     display: block;
@@ -81,7 +133,7 @@ p {
 
 .section-impormasyon {
     position: relative;
-    color: whitesmoke;
+    color: white;
 }
 
 .section-impormasyon:after {
@@ -90,14 +142,13 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    /*background-image: url('../img/14-four-3-min.jpg');*/
     background-image: url('../img/bgc.JPG');
     /*background-position: center;*/
-    background-position: 70% 60%;
+    background-position: 50% 64%;
     /*background-size: 100%;*/
     width: 100%;
     height: 100%;
-    opacity : 0.7;
+    opacity : 0.6;
     z-index: -1;
 }
 
@@ -145,8 +196,9 @@ p {
     font-size: 17px;
 }
 
-.paalala-kasuotan-content {
+.paalala-content {
     font-size: 10px;
+    color: darkslategray;
 }
 
 hr.paalala {
@@ -333,8 +385,9 @@ header .header-content .header-content-inner h1.len {
 
 header .header-content-inner h2.fam{
     font-size: 25px;
-    font-family: Sanchez;
+    font-family: 'Marck Script', cursive;
     color: black;
+    font-weight: bold;
 }
 
 header .header-content .header-content-inner h1 {
@@ -403,9 +456,10 @@ header .header-content .header-content-inner p {
 
     header .header-content .header-content-inner h2.fam {
         /*Home Header*/
-        font-size: 30px;
-        font-family: Sanchez;
+        font-size: 45px;
+        font-family: 'Marck Script', cursive;
         color: black;
+        font-weight: bold;
     }
 
     header .header-content .header-content-inner p {
@@ -775,6 +829,21 @@ body {
 .timeline .timeline-body > ul {
     margin-bottom: 0;
 }
+
+.timeline-header {
+    font-family: "esteban";
+    font-weight: bolder;
+}
+
+.timeline-subheader {
+    font-family: "esteban";
+    font-weight: bold;
+}
+
+.timeline-body {
+    font-family: esteban;
+}
+
 @media (min-width: 768px) {
     .timeline:before {
         left: 50%;
@@ -846,3 +915,19 @@ body {
         padding: 0 100px 20px 20px;
     }
 }
+
+@font-face {
+    font-family: nexa-rust-sans;
+    src: url(../font/NexaRustSans-Black.otf);
+}
+
+@font-face {
+    font-family: nexa-rust-script;
+    src: url(../font/NexaRustScriptL-0.otf);
+}
+
+@font-face {
+    font-family: esteban;
+    src: url(../font/Esteban-Regular.ttf);
+}
+
