@@ -218,6 +218,13 @@ img.wreath {
     font-family: esteban;
 }
 
+
+div.center {
+    min-height: 40px;
+    min-width: 50px;
+}
+
+
 .impormasyon-content
 {
     font-family: esteban;
@@ -292,13 +299,16 @@ aside {
     /*color: #f0bd80;*/
     color: rgba(80, 150, 166, .9);
     font-family: 'nexa-rust-sans';
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    vertical-align: middle;
 }
+
 
 .navbar-default .navbar-header .navbar-brand:hover,
 .navbar-default .navbar-header .navbar-brand:focus {
-    color: rgba(118, 29, 19, .9);
+    /*color: rgba(118, 29, 19, .9);*/
 }
 
 .navbar-default .navbar-header .navbar-toggle {
@@ -339,7 +349,10 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(80, 150, 166, .9);
+        /*color: rgba(80, 150, 166, .9);*/
+        /*color: black;*/
+        color: rgba(118, 29, 19, .9);
+        vertical-align: middle;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,

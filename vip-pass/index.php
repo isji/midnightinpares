@@ -70,7 +70,7 @@ if (!isset($_POST["homePassword"])) {
 <!--    </audio>-->
 <!--</div>-->
 
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top ">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -78,7 +78,7 @@ if (!isset($_POST["homePassword"])) {
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Ang Pag-iisang Dibdib</a>
+            <a class="navbar-brand page-scroll" href="#page-top" style="vertical-align: middle;">Ang Pag-iisang Dibdib</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -596,34 +596,34 @@ if (!isset($_POST["homePassword"])) {
                             <div id="myCarousel" class="carousel slide">
                                 <!-- main slider carousel items -->
                                 <div class="carousel-inner">
-                                    <div class="active item center-block" data-slide-number="0">
-                                        <img src="img/kasuotan/M1.jpg" class="img-responsive">
+                                    <div class="active item something" data-slide-number="0">
+                                        <img src="img/kasuotan/M1.jpg" class="img-responsive center-block">
                                     </div>
                                     <div class="item" data-slide-number="1">
-                                        <img src="img/kasuotan/M2.jpg" class="img-responsive">
+                                        <img src="img/kasuotan/M2.jpg" class="img-responsive center-block">
                                     </div>
                                     <div class="item" data-slide-number="2">
-                                        <img src="img/kasuotan/M3.jpg" class="img-responsive">
+                                        <img src="img/kasuotan/M3.jpg" class="img-responsive center-block">
                                     </div>
                                     <div class="item" data-slide-number="3">
-                                        <img src="img/kasuotan/M4.jpg" class="img-responsive">
+                                        <img src="img/kasuotan/M4.jpg" class="img-responsive center-block">
                                     </div>
                                     <div class="item" data-slide-number="4">
-                                        <img src="img/kasuotan/F1.jpg" class="img-responsive">
+                                        <img src="img/kasuotan/F1.jpg" class="img-responsive center-block">
                                     </div>
                                     <div class="item" data-slide-number="5">
-                                        <img src="img/kasuotan/F2.jpg" class="img-responsive">
+                                        <img src="img/kasuotan/F2.jpg" class="img-responsive center-block">
                                     </div>
                                     <div class="item" data-slide-number="6">
-                                        <img src="img/kasuotan/F3.jpg" class="img-responsive">
+                                        <img src="img/kasuotan/F3.jpg" class="img-responsive center-block">
                                     </div>
                                     <div class="item" data-slide-number="7">
-                                        <img src="img/kasuotan/F4.jpg" class="img-responsive">
+                                        <img src="img/kasuotan/F4.jpg" class="img-responsive center-block">
                                     </div>
                                 </div>
-                                <!-- main slider carousel nav controls --> <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+                                <!-- main slider carousel nav controls --> <a class="carousel-control left" href="#myCarousel" data-slide="prev"><b><<<</b></a>
 
-                                <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+                                <a class="carousel-control right" href="#myCarousel" data-slide="next"><b>>>></b></a>
                             </div>
                         </div>
 
@@ -962,3 +962,11 @@ if (!isset($_POST["homePassword"])) {
 </body>
 
 </html>
+
+<div class="row col-md-6 col-md-offset-3 col-xs-12">
+    <audio controls autoplay>
+        <source src="file/love-team.mp3" type="audio/ogg"/>
+        <source src="file/love-team.mp3" type="audio/mpeg"/>
+        An html5-capable browser is required to play this audio.
+    </audio>
+</div>
