@@ -540,9 +540,90 @@ if (!isset($_POST["homePassword"])) {
                 <div class="modal-body">
                     Ang Boho-style na pananamit ay binubuo ng dalawang mahalagang katangian - stylish at komportableng suotin. Sa madaling salita, halos huling linggo ng summer ang araw ng aming kasal kaya't kung maaari ay presko ang inyong damit sa araw na iyon. Ito ang ilang mga larawan ng mga Boho-style outfits na pwede niyong gayahin at gawing peg para sa inyong magiging damit. Maligayang pagmi-mix and match!
                 </div>
+
+
+
+<!--
+<!--                <div class="col-md-12 hidden-sm hidden-xs" id="slider-thumbs">-->
+<!---->
+<!--
+<!--                    <ul class="list-inline">-->
+<!--                        <li> <a id="carousel-selector-0" class="selected">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=one" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                        <li> <a id="carousel-selector-1">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=two" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                        <li> <a id="carousel-selector-2">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=three" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                        <li> <a id="carousel-selector-3">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=four" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                        <li> <a id="carousel-selector-4">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=five" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                        <li> <a id="carousel-selector-5">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=six" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                        <li> <a id="carousel-selector-6">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=seven" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                        <li> <a id="carousel-selector-7">-->
+<!--                                <img src="http://placehold.it/80x60&amp;text=eight" class="img-responsive">-->
+<!--                            </a></li>-->
+<!--                    </ul>-->
+<!---->
+<!--                </div>-->
+
+
+                <!-- main slider carousel -->
+                <div class="row">
+                    <div class="col-md-12" id="slider">
+
+                        <div class="col-md-12" id="carousel-bounding-box">
+                            <div id="myCarousel" class="carousel slide">
+                                <!-- main slider carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item center-block" data-slide-number="0">
+                                        <img src="img/kasuotan/M1.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="1">
+                                        <img src="img/kasuotan/M2.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="2">
+                                        <img src="img/kasuotan/M3.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="3">
+                                        <img src="img/kasuotan/M4.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="4">
+                                        <img src="img/kasuotan/F1.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="5">
+                                        <img src="img/kasuotan/F2.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="6">
+                                        <img src="img/kasuotan/F3.jpg" class="img-responsive">
+                                    </div>
+                                    <div class="item" data-slide-number="7">
+                                        <img src="img/kasuotan/F4.jpg" class="img-responsive">
+                                    </div>
+                                </div>
+                                <!-- main slider carousel nav controls --> <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
+
+                                <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!--/main slider carousel-->
+
                 <div class="modal-wreath">
                     <img src="img/wreath.png" height="25%" width="25%" align="center">
                 </div>
+
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
@@ -700,50 +781,6 @@ if (!isset($_POST["homePassword"])) {
                             <div id="six" class="panel-collapse collapse">
                                 <div class="panel-body">
                                     Sana maintidihan niyo na kung sino lang ang nakatanggap ng imbitasyon ay siya lamang ang maaring dumalo. Gusto man namin kayong magsama ng ibang kaibigan o kakilala, ikinalulungkot namin na baka hindi na tayo magkasya sa venue. Hugs!
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- MODAL KASUOTAN -->
-                    <div class="modal fade" id="kasuotanModal" role="dialog">
-                        <div class="modal-dialog modal-m">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <i class="fa fa-black-tie icon-paalala fa-2x sr-contact"></i>
-                                    KASUOTAN
-                                </div>
-                                <div class="modal-body">
-                                    Ang Boho-style na pananamit ay binubuo ng dalawang mahalagang katangian - stylish at komportableng suotin. Sa madaling salita, halos huling linggo ng summer ang araw ng aming kasal kaya't kung maaari ay presko ang inyong damit sa araw na iyon. Ito ang ilang mga larawan ng mga Boho-style outfits na pwede niyong gayahin at gawing peg para sa inyong magiging damit. Maligayang pagmi-mix and match!
-                                </div>
-                                <div class="modal-wreath">
-                                    <img src="img/wreath.png" height="25%" width="25%" align="center">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- MODAL REGALO -->
-                    <div class="modal fade" id="regaloModal" role="dialog">
-                        <div class="modal-dialog modal-m">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    <i class="fa fa-gift icon-paalala fa-2x sr-contact"></i>
-                                    REGALO
-                                </div>
-                                <div class="modal-body">
-                                    Hindi required magbigay ng regalo. Kung gusto mo talaga kaming regaluhan, no judging naman kung ano ang nais mong ibigay. Tandaan na ang pinakamahalagang bagay para sa amin ay ang pagdalo mo sa aming munting pagdiriwang. Yeheees!
-                                </div>
-                                <div class="modal-wreath">
-                                    <img src="img/wreath.png" height="25%" width="25%" align="center">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
                         </div>
