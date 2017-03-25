@@ -489,7 +489,12 @@ if (!isset($_POST["homePassword"])) {
             </div>
             <div class="col-lg-2 col-lg-offset-2 text-center">
 <!--                <hr class="paalala">-->
-                <a data-toggle="modal" data-target="#kasuotanModal"><i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i></a>
+                <a href="#" data-toggle="modal" data-target="#kasuotanModal">
+                    <i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i>
+                </a>
+<!--                <a href="#" data-toggle="modal" data-target="#kwento2">-->
+<!--                    <img class="img-circle img-responsive" src="img/timeline/2.JPG" alt="">-->
+<!--                </a>-->
                 <div class="paalala-category">KASUOTAN</div>
                 <div class="paalala-content">
                 <p class="text">"Bohemian" o "Boho" ang tema ng aming kasal.</p>

@@ -291,7 +291,7 @@ aside {
     /*color: #F05F40;*/
     /*color: #f0bd80;*/
     color: rgba(80, 150, 166, .9);
-    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'nexa-rust-sans';
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -779,12 +779,12 @@ body {
 }
 .timeline:before {
     top: 0;
-    bottom: 0;
+    bottom: 5%;
     position: absolute;
     content: "";
-    width: 2px;
+    width: 4px;
     background-color: #f1f1f1;
-    left: 40px;
+    left: 47px;
     margin-left: -1.5px;
 }
 .timeline > li {
@@ -898,10 +898,10 @@ body {
         text-align: right;
     }
     .timeline > li .timeline-image {
-        width: 100px;
-        height: 100px;
+        width: 130px;
+        height: 130px;
         left: 50%;
-        margin-left: -50px;
+        margin-left: -65px;
     }
     .timeline > li .timeline-image h4 {
         font-size: 13px;
@@ -957,7 +957,9 @@ body {
 
 @font-face {
     font-family: nexa-rust-sans;
-    src: url(../font/NexaRustSans-Black.otf);
+    /*src: url(../font/NexaRustSans-Black.otf);*/
+    src: url(../font/NexaRustSansBlack.otf);
+
 }
 
 @font-face {
