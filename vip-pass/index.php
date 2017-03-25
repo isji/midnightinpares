@@ -503,7 +503,9 @@ if (!isset($_POST["homePassword"])) {
             </div>
             <div class="col-lg-2 text-center">
 <!--                <hr class="paalala">-->
-                <a data-toggle="modal" data-target="#regaloModal"><i class="fa fa-gift icon-paalala fa-5x sr-contact"></i></a>
+                <a href="#" data-toggle="modal" data-target="#regaloModal">
+                    <i class="fa fa-gift icon-paalala fa-5x sr-contact"></i>
+                </a>
                 <div class="paalala-category">REGALO </div>
                 <div class="paalala-content">
                 <p class="text">
@@ -514,7 +516,9 @@ if (!isset($_POST["homePassword"])) {
             </div>
             <div class="col-lg-2 text-center">
 <!--                <hr class="paalala">-->
-                <a data-toggle="modal" data-target="#faqModal"><i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i></a>
+                <a href="#" data-toggle="modal" data-target="#faqModal">
+                    <i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i>
+                </a>
                 <div class="paalala-category">FAQs</div>
                 <div class="paalala-content">
                 <p class="text">"Huwag mahihiyang magtanong, kung may..." </p>
@@ -523,7 +527,9 @@ if (!isset($_POST["homePassword"])) {
                 </div>
             <div class="col-lg-2 text-center">
 <!--                <hr class="paalala">-->
-                <a data-toggle="modal" data-target="#reminderModal"><i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i></a>
+                <a href="#" data-toggle="modal" data-target="#reminderModal">
+                    <i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i>
+                </a>
                 <div class="paalala-category">REMINDERS</div>
                 <div class="paalala-content">
                 <p class="text">Bawal ang makakalimutin.</p>
