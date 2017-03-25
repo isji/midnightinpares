@@ -1,7 +1,9 @@
 <?php
 $currentLink = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 $homeLink = $currentLink . '/../../index.php';
-$password = 'siopao';
+$password = 'axel';
+
+$hashTag = '#SJLenLoveTeam';
 
 if (!isset($_POST["homePassword"])) {
     header('Location: ' . $homeLink);
@@ -59,14 +61,14 @@ if (!isset($_POST["homePassword"])) {
 
 <body id="page-top">
 
-<div class="row col-md-6 col-md-offset-3 col-xs-12">
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Example: Audio with no additional data ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <audio controls autoplay>
-        <source src="file/love-team.mp3" type="audio/ogg"/>
-        <source src="file/love-team.mp3" type="audio/mpeg"/>
-        An html5-capable browser is required to play this audio.
-    </audio>
-</div>
+<!--<div class="row col-md-6 col-md-offset-3 col-xs-12">-->
+<!--
+<!--    <audio controls autoplay>-->
+<!--        <source src="file/love-team.mp3" type="audio/ogg"/>-->
+<!--        <source src="file/love-team.mp3" type="audio/mpeg"/>-->
+<!--        An html5-capable browser is required to play this audio.-->
+<!--    </audio>-->
+<!--</div>-->
 
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
@@ -118,8 +120,8 @@ if (!isset($_POST["homePassword"])) {
     </div>
     <div class="header-bottom">
 <!--        <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>-->
-        <a href="#about" class="btn btn-primary btn-xl page-scroll">Kwentong #SJLenLoveTeam</a> <br/>
-        <img src="img/wreath.png" height="80%" width="80%">
+        <a href="#about" class="btn btn-primary btn-xl page-scroll">Kwentong <?php echo $hashTag?></a> <br/>
+        <img class="wreath" src="img/wreath.png" height="80%" width="80%">
     </div>
 </header>
 
@@ -187,7 +189,9 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/4.jpg" alt="">
+                            <a href="#" data-toggle="modal" data-target="#kwento4">
+                                <img class="img-circle img-responsive" src="img/timeline/4.jpg" alt="">
+                            </a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -202,7 +206,9 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/5.jpg" alt="">
+                            <a href="#" data-toggle="modal" data-target="#kwento5">
+                                <img class="img-circle img-responsive" src="img/timeline/5.jpg" alt="">
+                            </a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -219,7 +225,9 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/6.jpg" alt="">
+                            <a href="#" data-toggle="modal" data-target="#kwento6">
+                                <img class="img-circle img-responsive" src="img/timeline/6.jpg" alt="">
+                            </a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -234,7 +242,9 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li class="timeline-inverted">
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/7.JPG" alt="">
+                            <a href="#" data-toggle="modal" data-target="#kwento7">
+                                <img class="img-circle img-responsive" src="img/timeline/7.JPG" alt="">
+                            </a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -251,7 +261,9 @@ if (!isset($_POST["homePassword"])) {
                     </li>
                     <li>
                         <div class="timeline-image">
-                            <img class="img-circle img-responsive" src="img/timeline/8.jpg" alt="">
+                            <a href="#" data-toggle="modal" data-target="#kwento8">
+                                <img class="img-circle img-responsive" src="img/timeline/8.jpg" alt="">
+                            </a>
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
@@ -276,6 +288,7 @@ if (!isset($_POST["homePassword"])) {
         </div>
     </div>
 
+<!--    MODAL KWENTO-->
     <div id="kwento1" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-m">
             <div class="modal-content">
@@ -302,6 +315,85 @@ if (!isset($_POST["homePassword"])) {
         </div>
     </div>
 
+    <div id="kwento3" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/3.jpg" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kwento4" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/4.jpg" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kwento5" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/5.jpg" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kwento6" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/6.jpg" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kwento7" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/7.JPG" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="kwento8" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="img/timeline/8.jpg" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </section>
 
 
@@ -315,14 +407,14 @@ if (!isset($_POST["homePassword"])) {
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container impormasyon-content">
         <div class="row">
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-calendar icon-impormasyon sr-icons"></i>
                     <!--<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>-->
                     <h3>Petsa: <b>May 26, 2017</b></h3>
-                    <p class="text">Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave.</p>
+                    <p class="text"><mark>Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave.</mark></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -330,7 +422,7 @@ if (!isset($_POST["homePassword"])) {
                     <!--<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-clock-o icon-impormasyon sr-icons"></i>
                     <h3>Oras: <b>4:00PM - 8:00PM</b></h3>
-                    <p class="text">Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!</p>
+                    <p class="text"><mark>Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!</mark></p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
@@ -338,20 +430,20 @@ if (!isset($_POST["homePassword"])) {
                     <!--<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-map-marker icon-impormasyon sr-icons"></i>
                     <h3>Lugar: <b>14 Four Cafe</b></h3>
-                    <p class="text">144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
-                        Rizal</p>
-                    <a href="#" data-toggle="modal" data-target="#map">(I-click para sa mapa)</a>
+                    <p class="text"><mark>144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
+                        Rizal</mark></p>
+                    <a href="#" data-toggle="modal" data-target="#map" class="paalala-content">(I-click para sa mapa)</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-heart text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-hashtag icon-impormasyon sr-icons"></i>
-                    <h3>#<b>SJLenLoveTeam</b></h3>
+                    <h3><b><?php echo $hashTag?></b></h3>
 <!--                    <p class="text-muted"></p>-->
-                    <p class="text">Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa
+                    <p class="text"><mark>Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa
                         aming kasal
-                        sa mga SNS.</p>
+                        sa mga SNS.</mark></p>
                 </div>
             </div>
         </div>
@@ -362,6 +454,9 @@ if (!isset($_POST["homePassword"])) {
             <div class="modal-content">
                 <div class="modal-body">
                     <img src="img/map.jpg" class="img-responsive">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -387,7 +482,9 @@ if (!isset($_POST["homePassword"])) {
             <div class="col-lg-8 col-lg-offset-2 text-center">
                 <h2 class="section-header">Mga PAALALA</h2>
 <!--                <hr class="primary">-->
-                <p>I-click ang <b><i>ICONS</i></b> para sa karagdagang detalye</p>
+                <div class="subheader-paalala"
+                    <p>I-click ang <b><i>ICONS</i></b> para sa karagdagang detalye</p>
+                </div>
                 <hr class="paalala">
             </div>
             <div class="col-lg-2 col-lg-offset-2 text-center">
@@ -434,7 +531,7 @@ if (!isset($_POST["homePassword"])) {
     <!-- MODAL KASUOTAN -->
     <div class="modal fade" id="kasuotanModal" role="dialog">
         <div class="modal-dialog modal-m">
-            <div class="modal-content">
+            <div class="modal-content impormasyon-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <i class="fa fa-black-tie icon-paalala fa-2x sr-contact"></i>
@@ -456,7 +553,7 @@ if (!isset($_POST["homePassword"])) {
     <!-- MODAL REGALO -->
     <div class="modal fade" id="regaloModal" role="dialog">
         <div class="modal-dialog modal-m">
-            <div class="modal-content">
+            <div class="modal-content impormasyon-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <i class="fa fa-gift icon-paalala fa-2x sr-contact"></i>
@@ -478,7 +575,7 @@ if (!isset($_POST["homePassword"])) {
     <!-- MODAL REMINDERs -->
     <div class="modal fade" id="reminderModal" role="dialog">
         <div class="modal-dialog modal-m">
-            <div class="modal-content">
+            <div class="modal-content impormasyon-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <i class="fa fa-info-circle icon-paalala fa-2x sr-contact"></i>
@@ -513,7 +610,7 @@ if (!isset($_POST["homePassword"])) {
     <!-- MODAL FAQs -->
     <div class="modal fade" id="faqModal" role="dialog">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content impormasyon-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <i class="fa fa-info-circle icon-paalala fa-2x sr-contact"></i>
@@ -773,22 +870,22 @@ if (!isset($_POST["homePassword"])) {
                 <hr class="primary">
 <!--                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>-->
             </div>
-            <div class="col-lg-2 col-lg-offset-2 text-center">
+            <div class="col-lg-2 col-lg-offset-2 text-center impormasyon-content">
                 <i class="fa fa-phone fa-3x sr-contact"></i>
                 <p>0915-253-3212<br/>
                     0917-366-3908</p>
             </div>
-            <div class="col-lg-2 text-center">
+            <div class="col-lg-2 text-center impormasyon-content">
                 <i class="fa fa-facebook-square fa-3x sr-contact"></i>
                 <p><a href="https://www.facebook.com/sj.balatan">sj.balatan</a><br/>
                     <a href="https://www.facebook.com/eileen.licopit ">eileen.licopit</a></p>
             </div>
-            <div class="col-lg-2 text-center">
+            <div class="col-lg-2 text-center impormasyon-content">
                 <i class="fa fa-instagram fa-3x sr-contact"></i>
                 <p><a href="https://www.instagram.com/__isji">__isji</a><br/>
                     <a href="https://www.instagram.com/lenlicopss/ ">lenlicopss</a></p>
             </div>
-            <div class="col-lg-2 text-center">
+            <div class="col-lg-2 text-center impormasyon-content">
                 <i class="fa fa-envelope-o fa-3x sr-contact"></i>
                 <p><a href="mailto:sj.balatan@gmail.com">sj.balatan@gmail.com</a><br/>
                     <a href="mailto:eileenlicopit@gmail.com ">eileenlicopit@gmail.com</a></p>
