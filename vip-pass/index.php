@@ -1,7 +1,7 @@
 <?php
 $currentLink = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 $homeLink = $currentLink . '/../../index.php';
-$password = 'axel';
+$password = 'pizza';
 
 $hashTag = '#SJLenLoveTeam';
 
