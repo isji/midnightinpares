@@ -201,6 +201,7 @@ if (!isset($_POST["homePassword"])) {
                             <div class="timeline-body">
                                 <p class="text"><b>SJ:</b>  Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*</p>
                                 <p class="text"><b>Len:</b> Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*</p>
+                                <p class="text"><b>Axel:</b> At nagpatuloy ang pagiging close nilang dalawa! Arf!</p>
                             </div>
                         </div>
                     </li>
@@ -232,11 +233,12 @@ if (!isset($_POST["homePassword"])) {
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h4 class="timeline-header">March 2014</h4>
-                                <h4 class="timeline-subheader">Love Team (It's official.)</h4>
+                                <h4 class="timeline-subheader">Love Team </h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>SJ:</b>  Sabi ni Lord at ni parents, "Lez do diz!" Kaya nilatag ko kay Len ang intentions at mga plano ko para sa amin. Like a real man!</p>
-                                <p class="text"><b>Len:</b> Sabi ni Lord, "OK!" Keri naman 'yung sinabi ni SJ pero magpakilala muna siya sa parents ko!</p>
+                                <p class="text"><b>SJ:</b>  Sabi ni Lord, "Game na!". Kaya nagpaalam na ako sa parents ko. Nilatag ko kay Len ang intentions at mga plano ko para sa'min. Like a real man!</p>
+                                <p class="text"><b>Len:</b> Sabi ni Lord, "Game na!". Keri naman 'yung mga sinabi ni SJ pero magpakilala muna siya sa parents ko! </p>
+                              <p class="text"><b>Axel:</b> It's official! Arf! </p>
                             </div>
                         </div>
                     </li>
