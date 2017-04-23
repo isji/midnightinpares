@@ -1,0 +1,118 @@
+{
+  "menu": {
+    "title": "The Wedding",
+    "menu1": "Our Story",
+    "menu2": "Information",
+    "menu3": "Surprise!",
+    "menu4": "Reminders",
+    "menu5": "Contact Us"
+  },
+  "home": {
+    "message": "\"Sa mundong pabago-bago, pag-ibig ko ay totoo.\"",
+    "hashtag": "Story of #SJLenLoveTeam"
+  },
+  "kwento": {
+    "header": "Our Story",
+    "message": "\"Ang tanging pag-asa ko ay nasa tambalang ito.\"",
+    "1_date": "October 2011",
+    "1_title": "Chances for everyone, everywhere.",
+    "1_len": "We first met in a small office in Kalayaan, QC.",
+    "1_sj": "Thank you, RareJob!",
+    "2_date": "February 2012",
+    "2_title": "UP Fair",
+    "2_sj": "I think Len already likes me during this time. Hmmm.",
+    "2_len": "I think SJ wants me notice him when we were at the UP fair. Hmmm. ",
+    "2_axel": "Get real! Arf!",
+    "3_date": "March 2013",
+    "3_title": "Chinatown Date",
+    "3_sj": "Binondo trip! I asked Len to go with me. Ehem.",
+    "3_len": "Binondo trip! I agreed to accompany SJ since I have nothing to do at home. Hihi." ,
+    "3_axel": "You did not take me to this trip! Arf!",
+    "4_date": "May 2013",
+    "4_title": "Issues",
+    "4_len_1": "SJ's not replying to my text messages. I can't think of any reason why he's not responding.",
+    "4_sj": "Am I financially, emotionally, and spiritually ready to be in a commitment? ",
+    "4_len_2": "This situation is getting worse and I need to guard my heart. We seem to be dating but we never really said that we are dating.",
+    "4_axel": "Let's pray for these two lost souls. Arf!",
+    "5_date": "March 2014",
+    "5_title": "Love Team",
+    "5_sj": "God gave me a sign to move forward. ",
+    "5_len": "...",
+    "5_axel": "...",
+    "6_date": "December 2015",
+    "6_title": "Oh my Gulay!",
+    "6_axel_1": "...",
+    "6_sj": "...",
+    "6_len": "...",
+    "6_axel_2": "...",
+    "7_date": "March 2014",
+    "7_title": "Love Team",
+    "7_sjlen": "...",
+    "7_axel": "..."
+  },
+  "impormasyon": {
+    "header": "Important Information",
+    "message": "\"Sagutin mo lang ako aking sinta'y walang humpay na ligaya.\"",
+    "date_header": "Date",
+    "date": "May 26, 2017",
+    "date_notes": "Our wedding is on a Friday so please don't forget to file your leave.",
+    "time_header": "Time",
+    "time": "4:00PM - 8:00PM",
+    "time_notes": "The ceremony will start at exactly 4:00PM so please don't be late.",
+    "place_header": "Place",
+    "place": "14 Four Cafe",
+    "place_notes": "144 Magnolia Lane, Barangay San Isidro, Gregorio Heights Subdivision, Taytay, Rizal",
+    "place_map": "(Click here for the map)",
+    "hashtag_notes": "Please use this hashtag when posting updates about our wedding on your SNS accounts."
+  },
+  "sorpresa": {
+    "header": "Take a break",
+    "message": "\"Ang sarap maligaw sa ating kwentuhan.\"",
+    "button": "Surprise me"
+  },
+  "paalala": {
+    "header": "Some REMINDERS",
+    "header_notes": "Click the ICONS to view other details.",
+    "kasuotan_title": "ATTIRE",
+    "kasuotan_notes": "The theme of our wedding is \"Bohemian.\"",
+    "reagalo_title": "GIFT",
+    "regalo_notes": "Your attendance is the greatest gift of all. Char!",
+    "faqs_title": "FAQs",
+    "faqs_notes": "Raise your hand if you have any questions.",
+    "reminders_title": "REMINDERS",
+    "reminders_notes": "Always remember. Don't forget!"
+  },
+  "paalala_kasuotan": {
+    "header": "...",
+    "notes": "..."
+  },
+  "paalala_regalo": {
+    "header": "...",
+    "notes": "..."
+  },
+  "paalala_faqs": {
+    "header": "FAQs",
+    "1Q": "Is the venue for the ceremony different from the reception's venue?",
+    "1A": "The ceremony and reception will take place at the same venue.",
+    "2Q": "Can I take an Uber ride going to the venue?",
+    "2A": "Yes. The venue is within the coverage of Uber destinations.",
+    "3Q": "Are there parking lots in the venue?",
+    "3A": "Yes. Parking spaces around the venue can accommodate maximum of 20 vehicles.",
+    "4Q": "Until what time is the wedding reception?",
+    "4A": "Guests can stay at the venue until 8:00PM.",
+    "5Q": "Can I go home earlier than 8:00PM?",
+    "5A": "Yes, of course. We won't take it against you if you need to leave early.",
+    "6Q": "Can I bring a relative or friend to your wedding ceremony and part?",
+    "6A": "We hope you understand that only those with invitations (yes, the IDs) with their names on it are the ones we can accommodate. As much as we want to allow our guests to bring their friends or relatives, the venue can only welcome a certain number of people to avoid overcrowding."
+  },
+  "paalala_reminders": {
+    "header": "REMINDERS",
+    "1": "Please make sure to wear your invitation/VIP access pass, over your stylish and comfortable outfit, during the event.",
+    "2": "The password to our blog-style wedding invitation is for your eyes only. If you want to post the invitation (yes, again the ID) on your social media accounts (because it's awesome and you really like it), kindly blur the password part to avoid confusion regarding the purpose of our website.",
+    "3": "We hope that you can include carpooling as one of your transport options for this event to prevent exceeding the allowable number of parking spaces.",
+    "4": "Kindly offer prayers for sunshine for our wedding day! Thank you!"
+  },
+  "contact": {
+    "header": "Call. PM. Email."
+  }
+}

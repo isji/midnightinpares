@@ -1,17 +1,28 @@
 <?php
 $currentLink = 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'];
 $homeLink = $currentLink . '/../../index.php';
-$password = 'pizza';
-
+$passwordPH = 'pizza';
+$passwordEN = 'sushi';
 $hashTag = '#SJLenLoveTeam';
+$websiteMode = null;
 
 if (!isset($_POST["homePassword"])) {
     header('Location: ' . $homeLink);
 } else {
-    if ($_POST["homePassword"] != $password) {
+
+    if ($_POST["homePassword"] == $passwordPH) {
+        $str = file_get_contents($currentLink . "/../content/filipino.json");
+        $websiteMode = "PH";
+    } elseif ($_POST["homePassword"] == $passwordEN) {
+        $str = file_get_contents($currentLink . "/../content/english.json");
+        $websiteMode = 'EN';
+    }  elseif ($_POST["homePassword"] != $passwordPH || $_POST["homePassword"] != $passwordEN) {
         header('Location: ' . $homeLink);
     }
+    $json = json_decode($str, true);
 }
+
+//echo '<pre>' . print_r($json, true) . '</pre>';
 ?>
 
 <!DOCTYPE html>
@@ -61,15 +72,6 @@ if (!isset($_POST["homePassword"])) {
 
 <body id="page-top">
 
-<!--<div class="row col-md-6 col-md-offset-3 col-xs-12">-->
-<!--
-<!--    <audio controls autoplay>-->
-<!--        <source src="file/love-team.mp3" type="audio/ogg"/>-->
-<!--        <source src="file/love-team.mp3" type="audio/mpeg"/>-->
-<!--        An html5-capable browser is required to play this audio.-->
-<!--    </audio>-->
-<!--</div>-->
-
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top ">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -78,26 +80,26 @@ if (!isset($_POST["homePassword"])) {
                     data-target="#bs-example-navbar-collapse-1">
                 <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
             </button>
-            <a class="navbar-brand page-scroll" href="#page-top" style="vertical-align: middle;">Ang Pag-iisang Dibdib</a>
+            <a class="navbar-brand page-scroll" href="#page-top" style="vertical-align: middle;"><?php echo $json['menu']['title']?></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li>
-                    <a class="page-scroll" href="#about">Kwento</a>
+                    <a class="page-scroll" href="#about"><?php echo $json['menu']['menu1']?></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#services">Impormasyon</a>
+                    <a class="page-scroll" href="#services"><?php echo $json['menu']['menu2']?></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#surprise">Sorpresa</a>
+                    <a class="page-scroll" href="#surprise"><?php echo $json['menu']['menu3']?></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#paalala">Paalala</a>
+                    <a class="page-scroll" href="#paalala"><?php echo $json['menu']['menu4']?></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#contact">Contact Us</a>
+                    <a class="page-scroll" href="#contact"><?php echo $json['menu']['menu5']?></a>
                 </li>
             </ul>
         </div>
@@ -109,43 +111,29 @@ if (!isset($_POST["homePassword"])) {
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-<!--            <img src="img/wreath3.png" height="90%" width="90%">-->
+            <!--            <img src="img/wreath3.png" height="90%" width="90%">-->
 
             <h1 id="homeHeading" class="sj">SJ</h1>
             <h1 id="homeHeading" class="len">Len </h1>
-<!--            <h2 id="homeHeading" class="fam">Family and friends, this is it.</h2>-->
-            <h2 id="homeHeading" class="fam">"Sa mundong pabago-bago, pag-ibig ko ay totoo."</h2>
+            <!--            <h2 id="homeHeading" class="fam">Family and friends, this is it.</h2>-->
+            <h2 id="homeHeading" class="fam"><?php echo $json['home']['message']?></h2>
             <p></p>
         </div>
     </div>
     <div class="header-bottom">
-<!--        <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>-->
-        <a href="#about" class="btn btn-primary btn-xl page-scroll">Kwentong <?php echo $hashTag?></a> <br/>
+        <!--        <h2 id="homeHeading" class="fam">FAMILY AND FRIENDS! THIS IS IT!</h2>-->
+        <a href="#about" class="btn btn-primary btn-xl page-scroll"><?php echo $json['home']['hashtag']?></a> <br/>
         <img class="wreath" src="img/wreath.png" height="80%" width="80%">
     </div>
 </header>
-
-<!--<section class="section-kwento" id="about">-->
-<!--    <div class="container">-->
-<!--        <div class="row">-->
-<!--            <div class="col-lg-8 col-lg-offset-2 text-center">-->
-<!--                <h2 class="section-heading">Ang aming kwento!</h2>-->
-<!--                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the-->
-<!--                    lazy dog! The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy-->
-<!--                    dog!</p>-->
-<!--                <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Detalye ng Kasal</a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
 
 <!-- About Section -->
 <section class="section-kwento" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-header header-kwento">Ang Aming Kwento</h2>
-                <h3 class="section-subheader subheader-kwento text">"Ang tanging pag-asa ko ay nasa tambalang ito."</h3>
+                <h2 class="section-header header-kwento"><?php echo $json['kwento']['header']?></h2>
+                <h3 class="section-subheader subheader-kwento text"><?php echo $json['kwento']['message']?></h3>
                 <hr class="header-kwento">
             </div>
         </div>
@@ -160,12 +148,12 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-header">October 2011</h4>
-                                <h4 class="timeline-subheader">Chances for everyone, everywhere.</h4>
+                                <h4 class="timeline-header"><?php echo $json['kwento']['1_date']?></h4>
+                                <h4 class="timeline-subheader"><?php echo $json['kwento']['1_title']?></h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>Len:</b>  Nagkakilala kami sa isang maliit na opisina sa may Kalayaan Ave., QC. First job ko 'yun. First legit job naman ni SJ with TIN and all. Haha!</p>
-                                <p class="text"><b>SJ:</b>  Thank you, RareJob!</p>
+                                <p class="text"><b>Len:</b> <?php echo $json['kwento']['1_len']?></p>
+                                <p class="text"><b>SJ:</b> <?php echo $json['kwento']['1_sj']?></p>
                             </div>
                         </div>
                     </li>
@@ -177,13 +165,14 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-header">February 2012</h4>
-                                <h4 class="timeline-subheader">UP Fair</h4>
+                                <h4 class="timeline-header"><?php echo $json['kwento']['2_date']?></h4>
+                                <h4 class="timeline-subheader"><?php echo $json['kwento']['2_title']?></h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>SJ:</b> Nagpapapansin na si Len nang panahong 'to. Feeling ko talaga.</p>
-                                <p class="text"><b>Len:</b> Nagpapapansin na talaga si SJ 'nung time na 'to. Ginalingan sa UP fair perya. In fairness...</p>
-                                <p class="text"><b>Axel:</b> Arteee! Arf!</p>
+                                <p class="text"><b>SJ:</b> <?php echo $json['kwento']['2_sj']?>
+                                </p>
+                                <p class="text"><b>Len:</b> <?php echo $json['kwento']['2_len']?></p>
+                                <p class="text"><b>Axel:</b> <?php echo $json['kwento']['2_axel']?></p>
                             </div>
                         </div>
                     </li>
@@ -195,13 +184,13 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-header">March 2013</h4>
-                                <h4 class="timeline-subheader">Chinatown Date</h4>
+                                <h4 class="timeline-header"><?php echo $json['kwento']['3_date']?></h4>
+                                <h4 class="timeline-subheader"><?php echo $json['kwento']['3_title']?></h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>SJ:</b>  Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*</p>
-                                <p class="text"><b>Len:</b> Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*</p>
-                                <p class="text"><b>Axel:</b> At nagpatuloy ang pagiging close nilang dalawa! Arf!</p>
+                                <p class="text"><b>SJ:</b>  <?php echo $json['kwento']['3_sj']?></p>
+                                <p class="text"><b>Len:</b> <?php echo $json['kwento']['3_len']?></p>
+                                <p class="text"><b>Axel:</b> <?php echo $json['kwento']['3_axel']?></p>
                             </div>
                         </div>
                     </li>
@@ -213,14 +202,14 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-header">May 2013</h4>
-                                <h4 class="timeline-subheader">Issues</h4>
+                                <h4 class="timeline-header"><?php echo $json['kwento']['4_date']?></h4>
+                                <h4 class="timeline-subheader"><?php echo $json['kwento']['4_title']?></h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>Len:</b> Ano na kaya nangyari 'dun. Hindi na nagre-reply sa mga texts ko. Hmp. </p>
-                                <p class="text"><b>SJ:</b>  Teka, ready na ba ako sa commitment? Ready na ba ako financially, emotionally, at spiritually? </p>
-                                <p class="text"><b>Len:</b> Hmmmm. Kailangan kong i-guard ang heart ko. Ang labo na eh. Hindi kami pero parang kami. </p>
-                                <p class="text"><b>Axel:</b> At nag-pray sila separately... Arf! </p>
+                                <p class="text"><b>Len:</b> <?php echo $json['kwento']['4_len_1']?> </p>
+                                <p class="text"><b>SJ:</b> <?php echo $json['kwento']['4_sj']?></p>
+                                <p class="text"><b>Len:</b> <?php echo $json['kwento']['4_len_2']?> </p>
+                                <p class="text"><b>Axel:</b> <?php echo $json['kwento']['4_axel']?> </p>
                             </div>
                         </div>
                     </li>
@@ -232,13 +221,13 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-header">March 2014</h4>
-                                <h4 class="timeline-subheader">Love Team </h4>
+                                <h4 class="timeline-header"><?php echo $json['kwento']['5_date']?></h4>
+                                <h4 class="timeline-subheader"><?php echo $json['kwento']['5_title']?></h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>SJ:</b>  Sabi ni Lord, "Game na!". Kaya nagpaalam na ako sa parents ko. Nilatag ko kay Len ang intentions at mga plano ko para sa'min. Like a real man!</p>
-                                <p class="text"><b>Len:</b> Sabi ni Lord, "Game na!". Keri naman 'yung mga sinabi ni SJ pero magpakilala muna siya sa parents ko! </p>
-                              <p class="text"><b>Axel:</b> It's official! Arf! </p>
+                                <p class="text"><b>SJ:</b>  <?php echo $json['kwento']['5_sj']?></p>
+                                <p class="text"><b>Len:</b> <?php echo $json['kwento']['5_len']?> </p>
+                              <p class="text"><b>Axel:</b> <?php echo $json['kwento']['5_axel']?> </p>
                             </div>
                         </div>
                     </li>
@@ -250,14 +239,14 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-header">December 2015</h4>
-                                <h4 class="timeline-subheader">Oh my Gulay!</h4>
+                                <h4 class="timeline-header"><?php echo $json['kwento']['6_date']?></h4>
+                                <h4 class="timeline-subheader"><?php echo $json['kwento']['6_title']?></h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>Axel:</b> Isang gabi sa Session Road...</p>
-                                <p class="text"><b>SJ:</b> Luluhod pa ba ako? Hehe.</p>
-                                <p class="text"><b>Len:</b> Hindi na. Yes na!</p>
-                                <p class="text"><b>Axel:</b> At sila ay na-engage nang gabing iyon. Arf!</p>
+                                <p class="text"><b>Axel:</b> <?php echo $json['kwento']['6_axel_1']?></p>
+                                <p class="text"><b>SJ:</b> <?php echo $json['kwento']['6_sj']?></p>
+                                <p class="text"><b>Len:</b> <?php echo $json['kwento']['6_len']?></p>
+                                <p class="text"><b>Axel:</b> <?php echo $json['kwento']['6_axel_2']?></p>
                             </div>
                         </div>
                     </li>
@@ -269,28 +258,21 @@ if (!isset($_POST["homePassword"])) {
                         </div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
-                                <h4 class="timeline-header">May 26, 2017</h4>
-                                <h4 class="timeline-subheader">Ang Pag-iisang Dibdib!</h4>
+                                <h4 class="timeline-header"><?php echo $json['kwento']['7_date']?></h4>
+                                <h4 class="timeline-subheader"><?php echo $json['kwento']['7_title']?></h4>
                             </div>
                             <div class="timeline-body">
-                                <p class="text"><b>SJ and Len:</b> THIS IS IT!!!</p>
-                                <p class="text"><b>Axel:</b> Arf!</p>
+                                <p class="text"><b>SJ and Len:</b> <?php echo $json['kwento']['7_sjlen']?></p>
+                                <p class="text"><b>Axel:</b> <?php echo $json['kwento']['7_axel']?></p>
                             </div>
                         </div>
                     </li>
-<!--                    <li class="timeline-inverted">-->
-<!--                        <div class="timeline-image">-->
-<!--                            <h4>READY NA-->
-<!--                                <br>PARA SA-->
-<!--                                <br>2017!</h4>-->
-<!--                        </div>-->
-<!--                    </li>-->
                 </ul>
             </div>
         </div>
     </div>
 
-<!--    MODAL KWENTO-->
+    <!--    MODAL KWENTO-->
     <div id="kwento1" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog modal-m">
             <div class="modal-content">
@@ -403,8 +385,8 @@ if (!isset($_POST["homePassword"])) {
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-header header-impormasyon">Mahalagang Impormasyon</h2>
-                <h3 class="section-subheader subheader-impormasyon text">"Sagutin mo lang ako aking sinta'y walang humpay na ligaya."</h3>
+                <h2 class="section-header header-impormasyon"><?php echo $json['impormasyon']['header']?></h2>
+                <h3 class="section-subheader subheader-impormasyon text"><?php echo $json['impormasyon']['message']?></h3>
                 <hr class="primary">
             </div>
         </div>
@@ -415,37 +397,46 @@ if (!isset($_POST["homePassword"])) {
                 <div class="service-box">
                     <i class="fa fa-4x fa-calendar icon-impormasyon sr-icons"></i>
                     <!--<i class="fa fa-4x fa-diamond text-primary sr-icons"></i>-->
-                    <h3>Petsa: <b>May 26, 2017</b></h3>
-                    <p class="text"><mark>Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave.</mark></p>
+                    <h3><?php echo $json['impormasyon']['date_header']?>: <b><?php echo $json['impormasyon']['date']?></b></h3>
+                    <p class="text">
+                        <mark><?php echo $json['impormasyon']['date_notes']?></mark>
+                    </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-clock-o icon-impormasyon sr-icons"></i>
-                    <h3>Oras: <b>4:00PM - 8:00PM</b></h3>
-                    <p class="text"><mark>Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!</mark></p>
+                    <h3><?php echo $json['impormasyon']['time_header']?>: <b><?php echo $json['impormasyon']['time']?></b></h3>
+                    <p class="text">
+                        <mark><?php echo $json['impormasyon']['time_notes']?></mark>
+                    </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-map-marker icon-impormasyon sr-icons"></i>
-                    <h3>Lugar: <b>14 Four Cafe</b></h3>
-                    <p class="text"><mark>144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay,
-                        Rizal</mark></p>
-                    <a href="#" data-toggle="modal" data-target="#map" class="paalala-content">(I-click para sa mapa)</a>
+                    <h3><?php echo $json['impormasyon']['place_header']?>: <b><?php echo $json['impormasyon']['place']?></b></h3>
+                    <p class="text">
+                        <mark><?php echo $json['impormasyon']['place_notes']?> </mark>
+                    </p>
+                    <mark>
+                    <a href="#" data-toggle="modal" data-target="#map" class="paalala-content">
+                        <b><?php echo $json['impormasyon']['place_map']?></b>
+                    </a>
+                    </mark>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <!--<i class="fa fa-4x fa-heart text-primary sr-icons"></i>-->
                     <i class="fa fa-4x fa-hashtag icon-impormasyon sr-icons"></i>
-                    <h3><b><?php echo $hashTag?></b></h3>
-<!--                    <p class="text-muted"></p>-->
-                    <p class="text"><mark>Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa
-                        aming kasal
-                        sa mga SNS.</mark></p>
+                    <h3><b><?php echo $hashTag ?></b></h3>
+                    <!--                    <p class="text-muted"></p>-->
+                    <p class="text">
+                        <mark><?php echo $json['impormasyon']['hashtag_notes']?> </mark>
+                    </p>
                 </div>
             </div>
         </div>
@@ -469,11 +460,11 @@ if (!isset($_POST["homePassword"])) {
 <aside class="bg-dark" id="surprise">
     <div class="container text-center">
         <div class="call-to-action">
-            <h2 class="section-header header-suprise">Break ka muna</h2>
-            <h3 class="section-subheader subheader-surprise text">"Ang sarap maligaw sa ating kwentuhan."</h3>
+            <h2 class="section-header header-suprise"><?php echo $json['sorpresa']['header']?></h2>
+            <h3 class="section-subheader subheader-surprise text"><?php echo $json['sorpresa']['message']?></h3>
             <!--            <a href="file/MintWorks-RuleBook-Final.pdf" class="btn btn-default btn-xl sr-button" target="_blank">Download</a>-->
             <br/>
-            <a href="img/axel-ig.jpg" class="btn btn-default btn-xl sr-button" target="_blank">Surprise me</a>
+            <a href="img/axel-ig.jpg" class="btn btn-default btn-xl sr-button" target="_blank"><?php echo $json['sorpresa']['button']?></a>
         </div>
     </div>
 </aside>
@@ -482,63 +473,49 @@ if (!isset($_POST["homePassword"])) {
     <div class="container-fluid text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-header">Mga PAALALA</h2>
-<!--                <hr class="primary">-->
+                <h2 class="section-header"><?php echo $json['paalala']['header']?></h2>
                 <div class="subheader-paalala"
-                    <p>I-click ang <b><i>ICONS</i></b> para sa karagdagang detalye</p>
-                </div>
-                <hr class="paalala">
+                <p><?php echo $json['paalala']['header_notes']?></p>
             </div>
-            <div class="col-lg-2 col-lg-offset-2 text-center">
-<!--                <hr class="paalala">-->
-                <a href="#" data-toggle="modal" data-target="#kasuotanModal">
-                    <i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i>
-                </a>
-<!--                <a href="#" data-toggle="modal" data-target="#kwento2">-->
-<!--                    <img class="img-circle img-responsive" src="img/timeline/2.JPG" alt="">-->
-<!--                </a>-->
-                <div class="paalala-category">KASUOTAN</div>
-                <div class="paalala-content">
-                <p class="text">"Bohemian" o "Boho" ang tema ng aming kasal.</p>
-<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#kasuotanModal">Kasuotan</button>-->
-                </div>
-            </div>
-            <div class="col-lg-2 text-center">
-<!--                <hr class="paalala">-->
-                <a href="#" data-toggle="modal" data-target="#regaloModal">
-                    <i class="fa fa-gift icon-paalala fa-5x sr-contact"></i>
-                </a>
-                <div class="paalala-category">REGALO </div>
-                <div class="paalala-content">
-                <p class="text">
-                    Ang pinakamagandang regalo ay ang iyong pagdalo. Char!
-                </p>
-<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#regaloModal">Regalo</button>-->
-                </div>
-            </div>
-            <div class="col-lg-2 text-center">
-<!--                <hr class="paalala">-->
-                <a href="#" data-toggle="modal" data-target="#faqModal">
-                    <i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i>
-                </a>
-                <div class="paalala-category">FAQs</div>
-                <div class="paalala-content">
-                <p class="text">"Huwag mahihiyang magtanong, kung may..." </p>
-<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#faqModal">FAQs</button>-->
-                </div>
-                </div>
-            <div class="col-lg-2 text-center">
-<!--                <hr class="paalala">-->
-                <a href="#" data-toggle="modal" data-target="#reminderModal">
-                    <i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i>
-                </a>
-                <div class="paalala-category">REMINDERS</div>
-                <div class="paalala-content">
-                <p class="text">Bawal ang makakalimutin.</p>
-<!--                <button type="button" class="btn btn-default btn-l sr-button" data-toggle="modal" data-target="#reminderModal">Reminders</button>-->
-                </div>
+            <hr class="paalala">
+        </div>
+        <div class="col-lg-2 col-lg-offset-2 text-center">
+            <a href="#" data-toggle="modal" data-target="#kasuotanModal">
+                <i class="fa fa-black-tie icon-paalala fa-5x sr-contact"></i>
+            </a>
+            <div class="paalala-category"><?php echo $json['paalala']['kasuotan_title']?></div>
+            <div class="paalala-content">
+                <p class="text"><?php echo $json['paalala']['kasuotan_notes']?></p>
             </div>
         </div>
+        <div class="col-lg-2 text-center">
+            <a href="#" data-toggle="modal" data-target="#regaloModal">
+                <i class="fa fa-gift icon-paalala fa-5x sr-contact"></i>
+            </a>
+            <div class="paalala-category"><?php echo $json['paalala']['reagalo_title']?></div>
+            <div class="paalala-content">
+                <p class="text"> <?php echo $json['paalala']['regalo_notes']?> </p>
+            </div>
+        </div>
+        <div class="col-lg-2 text-center">
+            <a href="#" data-toggle="modal" data-target="#faqModal">
+                <i class="fa fa-question-circle icon-paalala fa-5x sr-contact"></i>
+            </a>
+            <div class="paalala-category"><?php echo $json['paalala']['faqs_title']?></div>
+            <div class="paalala-content">
+                <p class="text"><?php echo $json['paalala']['faqs_notes']?></p>
+            </div>
+        </div>
+        <div class="col-lg-2 text-center">
+            <a href="#" data-toggle="modal" data-target="#reminderModal">
+                <i class="fa fa-info-circle icon-paalala fa-5x sr-contact"></i>
+            </a>
+            <div class="paalala-category"><?php echo $json['paalala']['reminders_title']?></div>
+            <div class="paalala-content">
+                <p class="text"><?php echo $json['paalala']['reminders_notes']?></p>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- MODAL KASUOTAN -->
@@ -548,47 +525,11 @@ if (!isset($_POST["homePassword"])) {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <i class="fa fa-black-tie icon-paalala fa-2x sr-contact"></i>
-                    KASUOTAN
+                    <?php echo $json['paalala_kasuotan']['header']?>
                 </div>
                 <div class="modal-body">
-                    Ang Boho-style na pananamit ay binubuo ng dalawang mahalagang katangian - stylish at komportableng suotin. Sa madaling salita, halos huling linggo ng summer ang araw ng aming kasal kaya't kung maaari ay presko ang inyong damit sa araw na iyon. Ito ang ilang mga larawan ng mga Boho-style outfits na pwede niyong gayahin at gawing peg para sa inyong magiging damit. Maligayang pagmi-mix and match!
+                    <?php echo $json['paalala_kasuotan']['notes']?>
                 </div>
-
-
-
-<!--
-<!--                <div class="col-md-12 hidden-sm hidden-xs" id="slider-thumbs">-->
-<!---->
-<!--
-<!--                    <ul class="list-inline">-->
-<!--                        <li> <a id="carousel-selector-0" class="selected">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=one" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                        <li> <a id="carousel-selector-1">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=two" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                        <li> <a id="carousel-selector-2">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=three" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                        <li> <a id="carousel-selector-3">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=four" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                        <li> <a id="carousel-selector-4">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=five" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                        <li> <a id="carousel-selector-5">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=six" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                        <li> <a id="carousel-selector-6">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=seven" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                        <li> <a id="carousel-selector-7">-->
-<!--                                <img src="http://placehold.it/80x60&amp;text=eight" class="img-responsive">-->
-<!--                            </a></li>-->
-<!--                    </ul>-->
-<!---->
-<!--                </div>-->
-
 
                 <!-- main slider carousel -->
                 <div class="row">
@@ -623,7 +564,8 @@ if (!isset($_POST["homePassword"])) {
                                         <img src="img/kasuotan/F4.jpg" class="img-responsive center-block">
                                     </div>
                                 </div>
-                                <!-- main slider carousel nav controls --> <a class="carousel-control left" href="#myCarousel" data-slide="prev"><b><<<</b></a>
+                                <!-- main slider carousel nav controls --> <a class="carousel-control left"
+                                                                              href="#myCarousel" data-slide="prev"><b><<<</b></a>
 
                                 <a class="carousel-control right" href="#myCarousel" data-slide="next"><b>>>></b></a>
                             </div>
@@ -651,45 +593,10 @@ if (!isset($_POST["homePassword"])) {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <i class="fa fa-gift icon-paalala fa-2x sr-contact"></i>
-                    REGALO
+                    <?php echo $json['paalala_regalo']['header']?>
                 </div>
                 <div class="modal-body">
-                    Hindi required magbigay ng regalo. Kung gusto mo talaga kaming regaluhan, no judging naman kung ano ang nais mong ibigay. Cash man o gamit ay maa-appreciate namin. Tandaan na ang pinakamahalagang bagay para sa amin ay ang pagdalo mo sa aming munting pagdiriwang. Yeheees!
-                </div>
-                <div class="modal-wreath">
-                    <img src="img/wreath.png" height="25%" width="25%" align="center">
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MODAL REMINDERs -->
-    <div class="modal fade" id="reminderModal" role="dialog">
-        <div class="modal-dialog modal-m">
-            <div class="modal-content impormasyon-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <i class="fa fa-info-circle icon-paalala fa-2x sr-contact"></i>
-                    REMINDERS
-                </div>
-                <div class="modal-body">
-                    <ol>
-                        <li>
-                            Siguraduhing suot niyo ang inyong all-access pass sa araw ng aming kasal. Para feel na feels! Please! <br/>
-                        </li>
-                        <li>
-                            Ang password ng aming blog-style wedding invitation ay for your eyes only. Paki-blur na lang ang parte ng website at password kung nais niyong mag-post ng inyong VIP pass sa inyong SNS. Sikat!
-                        </li>
-                        <li>
-                            Upang maiwasang mapuno ang ating allotted parking lot, kung maari sana ay gawin niyong option ang mag-car pool imbes na hiwa-hiwalay ang paggamit ng sasakyan papunta sa venue. Kung kailangan niyo talaga magdala ng sariling sasakyan, siyempre OK lang naman din.
-                        </li>
-                        <li>
-                            Prayers for sunshine!
-                        </li>
-                    </ol>
+                    <?php echo $json['paalala_regalo']['notes']?>
                 </div>
                 <div class="modal-wreath">
                     <img src="img/wreath.png" height="25%" width="25%" align="center">
@@ -708,7 +615,7 @@ if (!isset($_POST["homePassword"])) {
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <i class="fa fa-info-circle icon-paalala fa-2x sr-contact"></i>
-                    FAQs
+                    <?php echo $json['paalala_faqs']['header']?>
                 </div>
                 <div class="modal-body">
                     <div class="panel-group" id="faq">
@@ -716,14 +623,14 @@ if (!isset($_POST["homePassword"])) {
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#one">
-                                        May reception ba? Iisa lang kasi 'yung nakalagay na venue.
+                                        <?php echo $json['paalala_faqs']['1Q']?>
                                     </a>
                                 </h4>
                             </div>
                             <div id="one" class="panel-collapse collapse">
-<!--                            <div id="one" class="panel-collapse collapse in">-->
+                                <!--                            <div id="one" class="panel-collapse collapse in">-->
                                 <div class="panel-body">
-                                    Ang ceremony at salusalo ay parehong gaganapin sa iisang lugar. Hindi na natin kailangang lumipat ng venue para sa kainan pagkatapos ng ceremony. Chibugan na agad pagkatapos ng I do's!
+                                    <?php echo $json['paalala_faqs']['1A']?>
                                 </div>
                             </div>
                         </div>
@@ -731,13 +638,13 @@ if (!isset($_POST["homePassword"])) {
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#two">
-                                        Pwede bang mag-Uber papunta sa venue?
+                                        <?php echo $json['paalala_faqs']['2Q']?>
                                     </a>
                                 </h4>
                             </div>
                             <div id="two" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Pwedeng-pwede! Na-try na namin ito gawin once kaya medyo sure naman kami na pwede rin kayo mag-Uber papunta sa venue. Hindi lang namin sure kung pwede ang GrabCar or GrabTaxi. Hehe. Sorry, biased. :)
+                                    <?php echo $json['paalala_faqs']['2A']?>
                                 </div>
                             </div>
                         </div>
@@ -745,13 +652,13 @@ if (!isset($_POST["homePassword"])) {
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#three">
-                                        Mayroon bang parking lot sa venue?
+                                        <?php echo $json['paalala_faqs']['3Q']?>
                                     </a>
                                 </h4>
                             </div>
                             <div id="three" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Mayroon! According sa isang staff ng venue, pwedeng mag-park ng maximum of 20 cars sa palibot ng lugar.
+                                    <?php echo $json['paalala_faqs']['3A']?>
                                 </div>
                             </div>
                         </div>
@@ -759,13 +666,13 @@ if (!isset($_POST["homePassword"])) {
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#four">
-                                        Hanggang ano'ng oras ang reception?
+                                        <?php echo $json['paalala_faqs']['4Q']?>
                                     </a>
                                 </h4>
                             </div>
                             <div id="four" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Hanggang 8:00PM ang aming booking sa venue.
+                                    <?php echo $json['paalala_faqs']['4A']?>
                                 </div>
                             </div>
                         </div>
@@ -773,13 +680,13 @@ if (!isset($_POST["homePassword"])) {
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#five">
-                                        Pwede bang umuwi nang mas maaga?
+                                        <?php echo $json['paalala_faqs']['5Q']?>
                                     </a>
                                 </h4>
                             </div>
                             <div id="five" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Oo naman. No hard feelings naman, friend, kung kailangan mong umuwi nang maaga.
+                                    <?php echo $json['paalala_faqs']['5A']?>
                                 </div>
                             </div>
                         </div>
@@ -787,13 +694,13 @@ if (!isset($_POST["homePassword"])) {
                             <div class="panel-heading">
                                 <h4 class="panel-title">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#faq" href="#six">
-                                        Pwede bang magdala ng plus 1?
+                                        <?php echo $json['paalala_faqs']['6Q']?>
                                     </a>
                                 </h4>
                             </div>
                             <div id="six" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                    Sana maintidihan niyo na kung sino lang ang nakatanggap ng imbitasyon ay siya lamang ang maaring dumalo. Gusto man namin kayong magsama ng ibang kaibigan o kakilala, ikinalulungkot namin na baka hindi na tayo magkasya sa venue. Hugs!
+                                    <?php echo $json['paalala_faqs']['6A']?>
                                 </div>
                             </div>
                         </div>
@@ -808,138 +715,72 @@ if (!isset($_POST["homePassword"])) {
             </div>
         </div>
     </div>
+
+    <!-- MODAL REMINDERs -->
+    <div class="modal fade" id="reminderModal" role="dialog">
+        <div class="modal-dialog modal-m">
+            <div class="modal-content impormasyon-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <i class="fa fa-info-circle icon-paalala fa-2x sr-contact"></i>
+                    <?php echo $json['paalala_reminders']['header']?>
+                </div>
+                <div class="modal-body">
+                    <ol>
+                        <li>
+                            <?php echo $json['paalala_reminders']['1']?>
+                        </li>
+                        <li>
+                            <?php echo $json['paalala_reminders']['2']?>
+                        </li>
+                        <li>
+                            <?php echo $json['paalala_reminders']['3']?>
+                        </li>
+                        <li>
+                            <?php echo $json['paalala_reminders']['4']?>
+                        </li>
+                    </ol>
+                </div>
+                <div class="modal-wreath">
+                    <img src="img/wreath.png" height="25%" width="25%" align="center">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
-
-
-
-
-<!--<section class="no-padding" id="portfolio">-->
-<!--    <div class="container-fluid">-->
-<!--        <div class="row no-gutter popup-gallery">-->
-<!--            <div class="col-lg-4 col-sm-6">-->
-<!--                <a href="img/portfolio/fullsize/1.jpg" class="portfolio-box">-->
-<!--                    <img src="img/portfolio/thumbnails/1.jpg" class="img-responsive" alt="">-->
-<!--                    <div class="portfolio-box-caption">-->
-<!--                        <div class="portfolio-box-caption-content">-->
-<!--                            <div class="project-category text-faded">-->
-<!--                                Category-->
-<!--                            </div>-->
-<!--                            <div class="project-name">-->
-<!--                                Project Name-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6">-->
-<!--                <a href="img/portfolio/fullsize/2.jpg" class="portfolio-box">-->
-<!--                    <img src="img/portfolio/thumbnails/2.jpg" class="img-responsive" alt="">-->
-<!--                    <div class="portfolio-box-caption">-->
-<!--                        <div class="portfolio-box-caption-content">-->
-<!--                            <div class="project-category text-faded">-->
-<!--                                Category-->
-<!--                            </div>-->
-<!--                            <div class="project-name">-->
-<!--                                Project Name-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6">-->
-<!--                <a href="img/portfolio/fullsize/3.jpg" class="portfolio-box">-->
-<!--                    <img src="img/portfolio/thumbnails/3.jpg" class="img-responsive" alt="">-->
-<!--                    <div class="portfolio-box-caption">-->
-<!--                        <div class="portfolio-box-caption-content">-->
-<!--                            <div class="project-category text-faded">-->
-<!--                                Category-->
-<!--                            </div>-->
-<!--                            <div class="project-name">-->
-<!--                                Project Name-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6">-->
-<!--                <a href="img/portfolio/fullsize/4.jpg" class="portfolio-box">-->
-<!--                    <img src="img/portfolio/thumbnails/4.jpg" class="img-responsive" alt="">-->
-<!--                    <div class="portfolio-box-caption">-->
-<!--                        <div class="portfolio-box-caption-content">-->
-<!--                            <div class="project-category text-faded">-->
-<!--                                Category-->
-<!--                            </div>-->
-<!--                            <div class="project-name">-->
-<!--                                Project Name-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6">-->
-<!--                <a href="img/portfolio/fullsize/5.jpg" class="portfolio-box">-->
-<!--                    <img src="img/portfolio/thumbnails/5.jpg" class="img-responsive" alt="">-->
-<!--                    <div class="portfolio-box-caption">-->
-<!--                        <div class="portfolio-box-caption-content">-->
-<!--                            <div class="project-category text-faded">-->
-<!--                                Category-->
-<!--                            </div>-->
-<!--                            <div class="project-name">-->
-<!--                                Project Name-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--            <div class="col-lg-4 col-sm-6">-->
-<!--                <a href="img/portfolio/fullsize/6.jpg" class="portfolio-box">-->
-<!--                    <img src="img/portfolio/thumbnails/6.jpg" class="img-responsive" alt="">-->
-<!--                    <div class="portfolio-box-caption">-->
-<!--                        <div class="portfolio-box-caption-content">-->
-<!--                            <div class="project-category text-faded">-->
-<!--                                Category-->
-<!--                            </div>-->
-<!--                            <div class="project-name">-->
-<!--                                Project Name-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </a>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>-->
-
 
 
 <aside class="bg-dark" id="contact">
     <div class="container">
 
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h3 class="section-header-tawag">Tawag. PM. Email.</h3>
-                <hr class="primary">
-<!--                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>-->
-            </div>
-            <div class="col-lg-2 col-lg-offset-2 text-center impormasyon-content">
-                <i class="fa fa-phone fa-3x sr-contact"></i>
-                <p>0915-253-3212<br/>
-                    0917-366-3908</p>
-            </div>
-            <div class="col-lg-2 text-center impormasyon-content">
-                <i class="fa fa-facebook-square fa-3x sr-contact"></i>
-                <p><a href="https://www.facebook.com/sj.balatan">sj.balatan</a><br/>
-                    <a href="https://www.facebook.com/eileen.licopit ">eileen.licopit</a></p>
-            </div>
-            <div class="col-lg-2 text-center impormasyon-content">
-                <i class="fa fa-instagram fa-3x sr-contact"></i>
-                <p><a href="https://www.instagram.com/__isji">__isji</a><br/>
-                    <a href="https://www.instagram.com/lenlicopss/ ">lenlicopss</a></p>
-            </div>
-            <div class="col-lg-2 text-center impormasyon-content">
-                <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                <p><a href="mailto:sj.balatan@gmail.com">sj.balatan@gmail.com</a><br/>
-                    <a href="mailto:eileenlicopit@gmail.com ">eileenlicopit@gmail.com</a></p>
-            </div>
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+            <h3 class="section-header-tawag"><?php echo $json['contact']['header']?></h3>
+            <hr class="primary">
+            <!--                <p>The quick brown fox jumps over the lazy dog! The quick brown fox jumps over the lazy dog!</p>-->
+        </div>
+        <div class="col-lg-2 col-lg-offset-2 text-center impormasyon-content">
+            <i class="fa fa-phone fa-3x sr-contact"></i>
+            <p>0915-253-3212<br/>
+                0917-366-3908</p>
+        </div>
+        <div class="col-lg-2 text-center impormasyon-content">
+            <i class="fa fa-facebook-square fa-3x sr-contact"></i>
+            <p><a href="https://www.facebook.com/sj.balatan">sj.balatan</a><br/>
+                <a href="https://www.facebook.com/eileen.licopit ">eileen.licopit</a></p>
+        </div>
+        <div class="col-lg-2 text-center impormasyon-content">
+            <i class="fa fa-instagram fa-3x sr-contact"></i>
+            <p><a href="https://www.instagram.com/__isji">__isji</a><br/>
+                <a href="https://www.instagram.com/lenlicopss/ ">lenlicopss</a></p>
+        </div>
+        <div class="col-lg-2 text-center impormasyon-content">
+            <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+            <p><a href="mailto:sj.balatan@gmail.com">sj.balatan@gmail.com</a><br/>
+                <a href="mailto:eileenlicopit@gmail.com ">eileenlicopit@gmail.com</a></p>
+        </div>
 
     </div>
 </aside>
