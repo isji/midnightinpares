@@ -1,0 +1,119 @@
+{
+  "menu": {
+    "title": "Ang Pag-iisang Dibdib",
+    "menu1": "Kwento",
+    "menu2": "Impormasyon",
+    "menu3": "Sorpresa!",
+    "menu4": "Paalala",
+    "menu5": "Contact Us"
+  },
+  "home": {
+    "message": "\"Sa mundong pabago-bago, pag-ibig ko ay totoo.\"",
+    "hashtag": "Kwentong #SJLenLoveTeam"
+  },
+  "kwento": {
+    "header": "Ang Aming Kwento",
+    "message": "\"Ang tanging pag-asa ko ay nasa tambalang ito.\"",
+    "1_date": "October 2011",
+    "1_title": "Chances for everyone, everywhere.",
+    "1_len": "Nagkakilala kami sa isang maliit na opisina sa may Kalayaan Ave., QC. First job ko 'yun. First legit job naman ni SJ with TIN and all. Haha!",
+    "1_sj": "Thank you, RareJob!",
+    "2_date": "February 2012",
+    "2_title": "UP Fair",
+    "2_sj": "Nagpapapansin na si Len nang panahong 'to. Feeling ko talaga.",
+    "2_len": "Nagpapapansin na talaga si SJ 'nung time na 'to. Ginalingan sa UP fair perya. In fairness...",
+    "2_axel": "Arteee! Arf!",
+    "3_date": "March 2013",
+    "3_title": "Chinatown Date",
+    "3_sj": "Binondo trip! Wala akong kasama kaya inaya ko si Len. *wink*",
+    "3_len": "Binondo trip! Wala naman akong gagawin sa bahay so sumama na lang ako kay SJ. *wink*",
+    "3_axel": "At nagpatuloy ang pagiging close nilang dalawa! Arf!",
+    "4_date": "May 2013",
+    "4_title": "Issues",
+    "4_len_1": "Ano na kaya nangyari 'dun? Hindi na nagre-reply sa mga texts ko. Hmp.",
+    "4_sj": "Teka, ready na ba ako sa commitment? Ready na ba ako financially, emotionally, at spiritually?",
+    "4_len_2": "Hmmmm. Kailangan kong i-guard ang heart ko. Ang labo na eh. Hindi kami pero parang kami.",
+    "4_axel": "At nag-pray sila separately... Arf!",
+    "5_date": "March 2014",
+    "5_title": "Love Team",
+    "5_sj": "Sabi ni Lord, \"Game na!\". Kaya nagpaalam na ako sa parents ko. Nilatag ko kay Len ang intentions at mga plano ko para sa'min. Like a real man!",
+    "5_len": "Sabi ni Lord, \"Game na!\". Keri naman 'yung mga sinabi ni SJ pero magpakilala muna siya sa parents ko!",
+    "5_axel": "It's official! Arf!",
+    "6_date": "December 2015",
+    "6_title": "Oh my Gulay!",
+    "6_axel_1": "Isang gabi sa Session Road...",
+    "6_sj": "Luluhod pa ba ako? Hehe.",
+    "6_len": "Hindi na. Yes na!",
+    "6_axel_2": "At sila ay na-engage nang gabing iyon. Arf!",
+    "7_date": "May 2017",
+    "7_title": "Love Team",
+    "7_sjlen": "THIS IS IT!!!",
+    "7_axel": "Arf!"
+  },
+  "impormasyon": {
+    "header": "Mahalagang Impormasyon",
+    "message": "\"Sagutin mo lang ako aking sinta'y walang humpay na ligaya.\"",
+    "date_header": "Petsa",
+    "date": "May 26, 2017",
+    "date_notes": "Ito ay araw ng Biyerness kaya't 'wag kalimutang mag-file ng leave",
+    "time_header": "Oras",
+    "time": "4:00PM - 8:00PM",
+    "time_notes": "Magsisimula ang ceremony ng eksaktong alas-4 ng hapon. Huwag male-late!",
+    "place_header": "Lugar",
+    "place": "14 Four Cafe",
+    "place_notes": "144 Magnolia Lane, Barangay San Isidro, Gregoria Heights Subdivision, Taytay, Rizal",
+    "place_map": "(I-click para sa mapa)",
+    "hashtag_notes": "Maari lamang gamitin ang hastag na ito sa tuwing magpo-post ng tungkol sa aming kasal sa mga SNS."
+  },
+  "sorpresa": {
+    "header": "Break ka muna",
+    "message": "\"Ang sarap maligaw sa ating kwentuhan.\"",
+    "button": "Surprise me"
+  },
+  "paalala": {
+    "header": "Mga PAALALA",
+    "header_notes": "I-click ang ICONS para sa karagdagang detalye",
+    "kasuotan_title": "KASUOTAN",
+    "kasuotan_notes": "\"Bohemian\" o \"Boho\" ang tema ng aming kasal.",
+    "reagalo_title": "REGALO",
+    "regalo_notes": "Ang pinakamagandang regalo ay ang iyong pagdalo. Char!",
+    "faqs_title": "FAQs",
+    "faqs_notes": "\"Huwag mahihiyang magtanong, kung may...\"",
+    "reminders_title": "REMINDERS",
+    "reminders_notes": "Bawal ang makakalimutin."
+  },
+  "paalala_kasuotan": {
+    "header": "KASUOTAN",
+    "notes": "Ang Boho-style na pananamit ay binubuo ng dalawang mahalagang katangian - stylish at komportableng suotin. Sa madaling salita, halos huling linggo ng summer ang araw ng aming kasal kaya't kung maaari ay presko ang inyong damit sa araw na iyon. Ito ang ilang mga larawan ng mga Boho-style outfits na pwede niyong gayahin at gawing peg para sa inyong magiging damit. Maligayang pagmi-mix and match!"
+  },
+  "paalala_regalo": {
+    "header": "REGALO",
+    "notes": "Hindi required magbigay ng regalo. Kung gusto mo talaga kaming regaluhan, no judging naman kung ano ang nais mong ibigay. Cash man o gamit ay maa-appreciate namin. Tandaan na ang pinakamahalagang bagay para sa amin ay ang pagdalo mo sa aming munting pagdiriwang. Yeheees!"
+  },
+  "paalala_faqs": {
+    "header": "FAQs",
+    "1Q": "May reception ba? Iisa lang kasi 'yung nakalagay na venue.",
+    "1A": "Ang ceremony at salusalo ay parehong gaganapin sa iisang lugar. Hindi na natin kailangang lumipat ng venue para sa kainan pagkatapos ng ceremony. Chibugan na agad pagkatapos ng I do's!",
+    "2Q": "Pwede bang mag-Uber papunta sa venue?",
+    "2A": "Pwedeng-pwede! Na-try na namin ito gawin once kaya medyo sure naman kami na pwede rin kayo mag-Uber papunta sa venue. Hindi lang namin sure kung pwede ang GrabCar or GrabTaxi. Hehe. Sorry, biased. :)",
+    "3Q": "Mayroon bang parking lot sa venue?",
+    "3A": "Mayroon! According sa isang staff ng venue, pwedeng mag-park ng maximum of 20 cars sa palibot ng lugar.",
+    "4Q": "Hanggang ano'ng oras ang reception?",
+    "4A": "Hanggang 8:00PM ang aming booking sa venue.",
+    "5Q": "Pwede bang umuwi nang mas maaga?",
+    "5A": "Oo naman. No hard feelings naman, friend, kung kailangan mong umuwi nang maaga.",
+    "6Q": "Pwede bang magdala ng plus 1?",
+    "6A": "Sana maintidihan niyo na kung sino lang ang nakatanggap ng imbitasyon ay siya lamang ang maaring dumalo. Gusto man namin kayong magsama ng ibang kaibigan o kakilala, ikinalulungkot namin na baka hindi na tayo magkasya sa venue. Hugs!"
+  },
+  "paalala_reminders": {
+    "header": "REMINDERS",
+    "1": "Siguraduhing suot niyo ang inyong all-access pass sa araw ng aming kasal. Para feel na feels! Please!",
+    "2": "Ang password ng aming blog-style wedding invitation ay for your eyes only. Paki-blur na lang ang parte ng website at password kung nais niyong mag-post ng inyong VIP pass sa inyong SNS. Sikat!",
+    "3": "Upang maiwasang mapuno ang ating allotted parking lot, kung maari sana ay gawin niyong option ang mag-car pool imbes na hiwa-hiwalay ang paggamit ng sasakyan papunta sa venue. Kung kailangan niyo talaga magdala ng sariling sasakyan, siyempre OK lang naman din.",
+    "4": "Prayers for sunshine!"
+  },
+  "contact": {
+    "header": "Tawag. PM. Email."
+  }
+
+}

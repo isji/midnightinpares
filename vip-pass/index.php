@@ -11,10 +11,12 @@ if (!isset($_POST["homePassword"])) {
 } else {
 
     if ($_POST["homePassword"] == $passwordPH) {
-        $str = file_get_contents($currentLink . "/../content/filipino.json");
+        //$str = file_get_contents($currentLink . "/../content/filipino.json");
+        $str = file_get_contents("content/filipino.json");
         $websiteMode = "PH";
     } elseif ($_POST["homePassword"] == $passwordEN) {
-        $str = file_get_contents($currentLink . "/../content/english.json");
+        //$str = file_get_contents($currentLink . "/../content/english.json");
+        $str = file_get_contents("content/english.json");
         $websiteMode = 'EN';
     }  elseif ($_POST["homePassword"] != $passwordPH || $_POST["homePassword"] != $passwordEN) {
         header('Location: ' . $homeLink);
