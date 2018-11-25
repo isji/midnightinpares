@@ -5,5 +5,7 @@ services:
     build:
       context: ./src
       dockerfile: Dockerfile
+      volumes: 
+        - /src:/var/www/html
     ports:
      - "80:80"
